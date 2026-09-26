@@ -33,6 +33,8 @@ Clinic-facing taxonomy grouping Treatments (e.g. injectables, laser, hair restor
 ### Treatment
 A specific clinical service (e.g. botox, laser resurfacing). Localizable. Relates to: Service Category (belongs to), Concern (addresses), Doctor (performed by), BeforeAfterCase (evidences), Article (educates about).
 
+> **Extended (FOUNDATION-EXTENSION):** Treatments/concerns resolve against the **Master Service Catalog** (`MASTER-SERVICE-CATALOG.md`) — stable Master identity + clinic capability configuration (3-axis state) + clinic content overlays; full relationship semantics in `CAPABILITY-RELATIONSHIP-MODEL.md`. Master identity is never duplicated into clinics.
+
 ### Concern
 A patient-lingo entry point (e.g. "acne scars", "hair loss") that may map to multiple Treatments. **First-class discovery entity** — a patient should not need to know a treatment name to discover relevant information. Relates to: Treatments (addresses it), Articles (explains it), Doctors (treats it).
 

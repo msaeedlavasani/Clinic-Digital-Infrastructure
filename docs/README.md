@@ -32,12 +32,18 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 | `product/INFORMATION-ARCHITECTURE.md` | CANONICAL | Navigation model, homepage responsibilities, section hierarchies |
 | `product/PAGE-ARCHETYPES.md` | CANONICAL | 14 page archetype contracts (intent/content/CTA/SEO/variation) |
 | `product/UX-FLOWS.md` | CANONICAL | Canonical flows incl. discovery, consultation, locale switch |
+| `product/PROTOTYPE-02-ACCEPTANCE.md` | CANONICAL (gate) | PROTOTYPE-02 acceptance contract (not yet executed) |
 | `architecture/PLATFORM-BOUNDARIES.md` | CANONICAL | Core/Config/Content/Integration zones; locale machinery |
+| `architecture/MASTER-SERVICE-CATALOG.md` | CANONICAL | Service/treatment/concern ontology; 11 families; taxonomy rules; ownership |
+| `architecture/CAPABILITY-RELATIONSHIP-MODEL.md` | CANONICAL | Relationship graph; 3-axis capability state; dependency resolution |
+| `architecture/CLINIC-PROVISIONING.md` | CANONICAL | Zero-code clinic provisioning contract; derivation; completeness; replication extension |
 | `architecture/REPLICATION-CONTRACT.md` | CANONICAL | Fork-free replication, change classification, Replication Gate, Controlled Variation |
 | `architecture/LOCALIZATION-FOUNDATION.md` | CANONICAL | Multilingual/bidirectional foundation: locales, localizations, fallback, routing |
 | `architecture/INTEGRATION-BOUNDARIES.md` | CANONICAL | Conceptual boundaries for external systems |
 | `architecture/SEO-FOUNDATION.md` | CANONICAL | SEO principles incl. multilingual SEO, multi-clinic risk |
 | `design-system/DESIGN-SYSTEM-CONSTITUTION.md` | CANONICAL | Experience language, layer model, anti-aesthetics, quality tests |
+| `design-system/EXPERIENCE-DIRECTION.md` | CANONICAL | Amended direction: cinematic spatial luxury, continuity contract, DNA vs Visual World, motion amendment |
+| `design-system/VISUAL-WORLDS.md` | CANONICAL | Visual Worlds (dark + light first-class); world governance |
 | `design-system/DESIGN-TOKENS.md` | CANONICAL | Token spec v0.1 (spacing/type/radius/elevation/motion/breakpoints/layers/colors) |
 | `design-system/TYPOGRAPHY.md` | CANONICAL | Roles, Vazirmatn, script-aware criteria, mixed-script rules |
 | `design-system/COLOR-THEMING.md` | CANONICAL | Semantic color roles, theme mapping contract, PEARL/MINERAL/OBSIDIAN families |
@@ -66,4 +72,4 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 
 ## Founding context
 
-This documentation set is the output of **CDI FOUNDATION-00** (including the multilingual/bidirectional steering delta) and **CDI DESIGN-01** (design-system specification; tokens, patterns, IA, archetypes, controlled variation). Both stages are documentation/design-only; no implementation exists yet. The first ADRs (framework, CMS, persistence, tenancy) are deliberately unmade — see `decisions/README.md` §4.
+This documentation set is the output of **CDI FOUNDATION-00** (including the multilingual/bidirectional steering delta), **CDI DESIGN-01** (design-system specification), and the **FOUNDATION EXTENSION** (SERVICE-CATALOG-01 + CLINIC-PROVISIONING-01 + DESIGN-AMENDMENT-01: Master Service Catalog, zero-code provisioning, experience-direction amendment, Visual Worlds, PROTOTYPE-02 gate). All stages are documentation/design-only; no implementation exists yet. The first ADRs (framework, CMS, persistence, tenancy) are deliberately unmade — see `decisions/README.md` §4. Prototype status: PROTOTYPE-01 and PROTOTYPE-01R were **visually rejected** (their research informed `EXPERIENCE-DIRECTION.md`; no prototype-specific values are canonical).

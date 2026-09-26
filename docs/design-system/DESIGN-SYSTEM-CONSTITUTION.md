@@ -26,6 +26,8 @@ CDI's experience language is:
 
 All three qualities must coexist; optimizing one into caricature (cold precision, luxury emptiness, cozy clutter) is a design defect.
 
+> **Amended (DESIGN-AMENDMENT-01):** the canonical experience direction is now **Cinematic Spatial Luxury × Continuous Scroll Journey × Medical Aesthetics** (`EXPERIENCE-DIRECTION.md`) — "Quiet Luxury" is restraint in decoration, not passivity in experience. The homepage is a continuous art-directed journey; visual worlds are clinic-selectable (`VISUAL-WORLDS.md`).
+
 ## 3. Anti-aesthetic rules (anti-patterns, not absolute bans)
 
 CDI designs must be evaluated against drift toward:
@@ -50,7 +52,7 @@ These are **anti-patterns with reviewable exceptions**, not absolute bans: a spe
 
 ## 5. Tokens, theme, and the not-a-color-swap rule
 
-Themes vary **more than color**: photography direction, surface behavior, composition emphasis, and density may legitimately differ between theme families, while shared UX contracts (accessibility, responsiveness, bidirectionality, interaction behavior) remain intact. `COLOR-THEMING.md` defines theme families and the mapping contract; `CONTROLLED-VARIATION.md` defines the full variation axes.
+Themes vary **more than color**: photography direction, surface behavior, composition emphasis, and density may legitimately differ between visual worlds, while shared UX contracts (accessibility, responsiveness, bidirectionality, interaction behavior) remain intact. Theme selection is governed by the **Visual Worlds** model (`VISUAL-WORLDS.md`) over the mapping contract of `COLOR-THEMING.md` §2; `CONTROLLED-VARIATION.md` defines the full variation axes.
 
 ## 6. Script-aware typography
 

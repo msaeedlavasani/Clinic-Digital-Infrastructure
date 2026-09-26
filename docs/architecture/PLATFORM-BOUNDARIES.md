@@ -41,7 +41,7 @@ CDI separates everything into four zones. **Platform Core** and **Clinic Configu
 └────────────────────────────────────────────────────────────┘
 ```
 
-- **Platform Core** — shared, clinic-agnostic capabilities: design system; rendering/composition rules; content schemas; SEO machinery; locale & direction machinery; analytics abstraction; integration boundaries; validation; reusable behavior.
+- **Platform Core** — shared, clinic-agnostic capabilities: design system; rendering/composition rules; content schemas; SEO machinery; locale & direction machinery; analytics abstraction; integration boundaries; validation; reusable behavior; **Master Service Catalog + capability derivation engine** (`MASTER-SERVICE-CATALOG.md`, `CAPABILITY-RELATIONSHIP-MODEL.md`, `CLINIC-PROVISIONING.md`).
 - **Clinic Configuration** — clinic-specific settings that select and parameterize Core capabilities: identity, logo, brand, theme, contact, locations, hours, social accounts, `defaultLocale` / `supportedLocales` / `localeConfiguration`, configured CTA behavior, domain, selected variants.
 - **Clinic Content** — the clinic's structured, locale-aware content: entities plus their localized representations (`LOCALIZATION-FOUNDATION.md`).
 - **External Integrations** — external systems reached only through conceptual boundaries (`INTEGRATION-BOUNDARIES.md`).

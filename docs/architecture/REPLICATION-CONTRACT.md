@@ -44,6 +44,8 @@ Before V1 architecture is considered proven, the platform must launch **at least
 
 Gate results are recorded in an ADR (the evidence artifact).
 
+**Provisioning test extension (FOUNDATION-EXTENSION):** the Stage-2 proof additionally requires two capability-mix-differentiated clinic profiles (Clinic A: LHR/Botox/Fillers/HIFU-RF/Skin Rejuvenation; Clinic B: Hair Transplant/PRP/Dermatology/Laser/selected surgical) launched through configuration + catalog selections + content + assets + associations + domain. If Clinic B requires clinic-specific Core modifications merely because its service mix differs: **REPLICATION PROOF = FAIL** (`CLINIC-PROVISIONING.md` §6).
+
 ## 5. Controlled Variation
 
 CDI does not want 2,000 identical sites, nor 2,000 independently designed applications. Clinic differentiation happens inside a bounded, governed space:

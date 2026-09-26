@@ -11,6 +11,8 @@
 
 Motion communicates **precision, continuity, and feedback** — not entertainment. No animation exists because it looks impressive (`DESIGN-SYSTEM-CONSTITUTION.md` §2–3).
 
+> **Amended (DESIGN-AMENDMENT-01):** motion is part of CDI **Art Direction and spatial storytelling** (`EXPERIENCE-DIRECTION.md` §4) — choreographed scene transitions, masking, depth, and scroll continuity are canonical motion vocabulary; repeated generic fade-up/card-entrance as the *primary* luxury language is an anti-pattern. Restraint, reduced-motion, and no-information-blocking rules below remain fully binding.
+
 ## 2. Categories & tokens
 
 | Category | Token | Range | Use |

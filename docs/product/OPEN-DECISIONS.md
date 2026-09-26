@@ -23,6 +23,23 @@ Each entry records: **question**, **why it matters**, **latest responsible decis
 
 ## 3. Register
 
+### Extension decisions (FOUNDATION-EXTENSION IDs)
+
+**FX-1. DECIDED — Master Service Catalog ontology** — six entity types (Concern/Treatment/Modality/Technology/Device/Area); 11 capability families; brand names never Master identity (`MASTER-SERVICE-CATALOG.md`).
+**FX-2. DECIDED — Three-axis capability state** — clinical availability ⊥ content publication ⊥ navigation visibility; never collapsed into one flag (`CAPABILITY-RELATIONSHIP-MODEL.md` §3).
+**FX-3. DECIDED — Capability-driven derivation** — clinic sites derive from capability state + Master graph; manual per-capability page creation is a provisioning smell (`CAPABILITY-RELATIONSHIP-MODEL.md` §5, `CLINIC-PROVISIONING.md` §3).
+**FX-4. DECIDED — Zero-code provisioning invariant** — capability/location/device/provider/locale changes never require Core modification or forks (`CLINIC-PROVISIONING.md` §5).
+**FX-5. DECIDED — Provisioning replication test** — Clinic A vs materially-different Clinic B profiles at Stage-2; service-mix-driven Core change = FAIL (`CLINIC-PROVISIONING.md` §6).
+**FX-6. DECIDED — Experience direction amendment** — Cinematic Spatial Luxury × Continuous Scroll Journey × Medical Aesthetics; homepage continuity contract (`EXPERIENCE-DIRECTION.md`).
+**FX-7. DECIDED — Experience DNA vs Visual World split** — stable shared DNA; clinic-configurable worlds; fork-free differentiation (`EXPERIENCE-DIRECTION.md` §3).
+**FX-8. DECIDED — Visual Worlds supersede closed theme families** — four initial worlds; **dark and light equally first-class; luxury ≠ dark mode** (`VISUAL-WORLDS.md`).
+**FX-9. DECIDED — Motion principle amendment** — motion as art direction/spatial storytelling; no WebGL mandate; simplest-technology rule (`EXPERIENCE-DIRECTION.md` §4).
+**FX-10. DERIVED — Concern Explorer resolves from clinic capabilities** — derived from FX-1/FX-3 + existing patient-discovery principle; no impossible treatment paths (`CAPABILITY-RELATIONSHIP-MODEL.md` §2.2).
+**FX-11. DEFERRED — Device/manufacturer database** — structure decided (generic device records); populating an industry device DB deferred until provisioning needs it.
+**FX-12. DEFERRED — Catalog initial population** — governance + families decided; exhaustive entry enumeration deferred to catalog-authoring stage (per-family source-cited edits).
+**FX-13. OPEN — Noor service mix for PROTOTYPE-02** — representative minimum fixed (B of PROTOTYPE-02-ACCEPTANCE §B); final Noor mix is an Owner selection.
+**FX-14. OPEN — Visual World for Reference Clinic #1** — world selection is an Owner decision at PROTOTYPE-02 briefing (dark AND light both must be proven regardless).
+
 ### OWNER class
 
 **O-1. Launch locale set per clinic (business)**

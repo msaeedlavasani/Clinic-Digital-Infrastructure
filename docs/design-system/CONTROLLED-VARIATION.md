@@ -13,7 +13,7 @@ CDI does not want 2,000 identical sites, nor 2,000 unmaintainable bespoke sites.
 
 | Axis | Varies | Bounded by |
 |---|---|---|
-| **Theme** | Semantic-token mapping within an approved family + imagery direction + surface behavior | `COLOR-THEMING.md` §2 mapping contract (AA contrast validity condition) |
+| **Theme** | **Visual World selection** (`VISUAL-WORLDS.md`) + semantic-token mapping + imagery direction + surface behavior + lighting/materiality expression | `COLOR-THEMING.md` §2 mapping contract (AA contrast validity condition); world admission rules |
 | **Hero Composition** | Editorial · Clinical · Immersive (§5.1) | pattern contracts in `SIGNATURE-PATTERNS.md` |
 | **Service Presentation** | Editorial Service · Compact Treatment · Featured Treatment (§5.2) | same |
 | **Doctor Presentation** | Portrait · Minimal · Profile (§5.3) | same |

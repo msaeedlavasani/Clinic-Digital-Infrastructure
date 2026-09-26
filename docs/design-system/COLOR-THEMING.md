@@ -41,9 +41,11 @@ A clinic theme is a **mapping into the semantic role set** (plus imagery/variant
 5. **Brand vs action decoupling.** `brand-primary` is expressive (surfaces, moments); `action-primary` is functional (CTAs). They may be related, but a theme may keep them distinct — the CTA stays the CTA in every locale and theme.
 6. **One theme per clinic across locales.** A single Clinic Theme works across all supported locales; themes are never the mechanism for RTL/LTR (`PLATFORM-BOUNDARIES.md` §3).
 
-## 3. Theme families (v0.1 conceptual directions)
+## 3. Theme families → superseded by Visual Worlds
 
-Three initial families for validation — **conceptual directions, not hard-coded templates** (values, imagery, and surface behavior are expressed at visual prototyping):
+> **Amended (DESIGN-AMENDMENT-01):** the closed PEARL/MINERAL/OBSIDIAN family set below is superseded by the open **Visual Worlds** model (`VISUAL-WORLDS.md` — Dark Cinematic · Luminous Luxury · Clinical Architectural · Natural Prestige). The mapping contract (§2) and accessibility validity condition remain fully canonical; the family names and any prototype-era values are historical evidence only.
+
+The original three conceptual directions (superseded as a closed set; retained as exploration history):
 
 ### PEARL — calm · premium · natural · clinical
 Warm ivory canvas; charcoal text; mineral tones; restrained sage as action/brand.
