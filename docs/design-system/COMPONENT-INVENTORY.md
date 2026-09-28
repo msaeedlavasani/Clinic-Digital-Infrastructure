@@ -102,3 +102,22 @@ default · hover · focus · active · disabled · loading · error · selected
 - **error** state pairs with human-readable localized copy (`SIGNATURE-PATTERNS.md` §8); error association is programmatic.
 - **selected** for choice controls and compare-slider position announcements.
 - Touch target floor (≥44×44) applies wherever interaction exists.
+
+## 3A. Form-field affordance contract (added DESIGN-SYSTEM-VNEXT-01)
+
+Minimalism must never make an interactive field indistinguishable from static text. A field must be discoverable as interactive **before** focus. The affordance states below map onto the §3 generic state contract and apply to all form controls (Input, Textarea, Select, Radio/Checkbox, Consent, PhoneInput, SearchInput):
+
+| Affordance state | §3 contract state | Requirement |
+|---|---|---|
+| rest | default | visibly interactive before focus: label present (Label role) and at least one boundary/surface/placeholder affordance distinguishes the interactive region from surrounding static content in every Visual World (`VISUAL-WORLDS.md`) |
+| hover | hover | pointer affordance where pointer input exists |
+| focus | focus | visible focus ring (`focus-ring` token, `DESIGN-TOKENS.md` §11) — never suppressed |
+| filled | (value present) | value + label relationship persists — no disappearing-label ambiguity; filled state remains distinguishable from rest |
+| invalid | error | error identified in localized text, not color alone (`SIGNATURE-PATTERNS.md` §8); association programmatic |
+| disabled | disabled | unambiguous non-interactivity |
+
+`loading` and `success` continue per §3/§8. Minimalist Visual Worlds may not trade away rest-state affordance: quiet styling changes the treatment, never removes the affordance.
+
+**Touch interaction envelope (added DESIGN-SYSTEM-VNEXT-01):** for touch presentation contexts (`PRESENTATION-CONTEXTS.md` §2), the preferred usable interaction envelope is **48 × 48 CSS px**; the accessibility floor (≥44×44) remains the minimum. The envelope may be provided by the hit area rather than enlarging the visible control — do not mechanically enlarge every visible control to 48×48.
+
+**No device forks:** affordance states are presentation-context-invariant; context-specific behavior exists only where the environment materially changes composition (e.g. virtual-keyboard relationships, `PRESENTATION-CONTEXTS.md` §4). QA: `DESIGN-QA.md` FORM-01.

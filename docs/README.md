@@ -11,6 +11,7 @@ A future contributor (human or agent) should be able to answer five questions fa
 | Question | Answer |
 |---|---|
 | **What is binding?** | Documents marked **CANONICAL** below, per `docs/governance/DOCUMENT-AUTHORITY.md` precedence rules |
+| **What is the design authority?** | `/DESIGN.md` (repo root) — operational front door into the canonical design-system documents |
 | **What is V1?** | `docs/product/V1-SCOPE.md` — the only source of V1 truth |
 | **What may I change?** | Anything not canonical, plus canonical docs via the documented change process — see `governance/DOCUMENT-AUTHORITY.md` §4 |
 | **What requires an ADR?** | `docs/decisions/README.md` §2 |
@@ -54,6 +55,11 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 | `design-system/CONTROLLED-VARIATION.md` | CANONICAL | Variation grammar, axes, admission rule, reference-clinic directions |
 | `design-system/COMPONENT-INVENTORY.md` | CANONICAL | Component taxonomy with V1 status + state contract |
 | `design-system/BIDIRECTIONAL-RESPONSIVE-ACCESSIBILITY.md` | CANONICAL | Bidirectional + responsive + accessibility contracts (WCAG 2.1 AA) |
+| `/DESIGN.md` (repo root) | CANONICAL | Operational design-system front door: map, rules, contract/token index, QA entry point |
+| `design-system/PRESENTATION-CONTEXTS.md` | CANONICAL | Presentation contexts (DESKTOP_WEB/IPHONE_WEB/ANDROID_WEB); composition equation; environment contracts |
+| `design-system/COMPOSITION-CONTRACTS.md` | CANONICAL | Stage rails/zones; 10 composition contracts; action zone; cinematic/editorial modes; treatment signature |
+| `design-system/DESIGN-QA.md` | CANONICAL | Rule-ID'd rendered Design QA (LAYOUT/MEDIA/ACTION/FORM/RESP/TYPE/SPACE/PROGRESS/MOTION/MEDICAL/SAFE/BIDI) |
+| `design-system/VALIDATION-HARNESS.md` | CANONICAL (spec) | `/design-system` validation-harness specification; implementation deliberately deferred (A-1 unmade) |
 | `content/CONTENT-MODEL.md` | CANONICAL (shape) | Conceptual entities/relationships + localization overlay |
 | `content/MEDICAL-TRUST-GOVERNANCE.md` | CANONICAL | Medical content integrity, Before/After governance |
 | `engineering/LEAD-CONSULTATION-CONTRACT.md` | CANONICAL | V1 lead capture boundary |
@@ -72,4 +78,4 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 
 ## Founding context
 
-This documentation set is the output of **CDI FOUNDATION-00** (including the multilingual/bidirectional steering delta), **CDI DESIGN-01** (design-system specification), and the **FOUNDATION EXTENSION** (SERVICE-CATALOG-01 + CLINIC-PROVISIONING-01 + DESIGN-AMENDMENT-01: Master Service Catalog, zero-code provisioning, experience-direction amendment, Visual Worlds, PROTOTYPE-02 gate). All stages are documentation/design-only; no implementation exists yet. The first ADRs (framework, CMS, persistence, tenancy) are deliberately unmade — see `decisions/README.md` §4. Prototype status: PROTOTYPE-01 and PROTOTYPE-01R were **visually rejected** (their research informed `EXPERIENCE-DIRECTION.md`; no prototype-specific values are canonical).
+This documentation set is the output of **CDI FOUNDATION-00** (including the multilingual/bidirectional steering delta), **CDI DESIGN-01** (design-system specification), the **FOUNDATION EXTENSION** (SERVICE-CATALOG-01 + CLINIC-PROVISIONING-01 + DESIGN-AMENDMENT-01: Master Service Catalog, zero-code provisioning, experience-direction amendment, Visual Worlds, PROTOTYPE-02 gate), and **DESIGN-SYSTEM-VNEXT-01** (canonicalization of the operational design layer: presentation contexts, composition contracts, semantic spacing, media/action/navigation contracts, Design QA rule IDs, agent design enforcement, `/DESIGN.md`, validation-harness spec). All stages are documentation/design-only; no implementation exists yet. The first ADRs (framework, CMS, persistence, tenancy) are deliberately unmade — see `decisions/README.md` §4. Prototype status: PROTOTYPE-01 and PROTOTYPE-01R were **visually rejected** (their research informed `EXPERIENCE-DIRECTION.md`; no prototype-specific values are canonical).

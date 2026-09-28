@@ -20,6 +20,25 @@ Photography is part of the Design System. Direction: **natural, credible, people
 | **Editorial** | brand/storytelling imagery | Hero (Editorial/Immersive), About |
 | **Before/After** | evidence-oriented clinical comparison | Before/After surfaces — evidence rules (§4) |
 
+## 2A. Media composition contract (added DESIGN-SYSTEM-VNEXT-01)
+
+Photography gains spatial semantics binding art direction to layout (`COMPOSITION-CONTRACTS.md`; enforced by `DESIGN-QA.md` MEDIA-01):
+
+| Concept | Meaning |
+|---|---|
+| **FOCAL SUBJECT** | what the image is *of* — face, clinically relevant anatomy, treatment/device, environment subject |
+| **PROTECTED SUBJECT REGION** | the region that must remain unobscured and legible across crops/overlays (face; clinical focal region) |
+| **TEXT-SAFE REGION** | the planned region where text/controls may sit (calm field, veil, grading) |
+| **CROP ENVELOPE** | the allowed crop range per context that preserves subject meaning — mobile crop may differ **materially** from desktop crop, deliberately |
+| **CONTRAST REGION** | the tonal region guaranteeing AA contrast for text/controls placed on the image |
+
+Rules:
+
+- Text placement is planned **with** photography at art-direction time, never improvised after layout; intentional text-over-image compositions are allowed and must be art-directed + contrast-valid.
+- A composition fails when a headline, CTA, progress control, or decorative element **unintentionally** competes with or obscures the focal subject.
+- `object-fit: cover` is implementation behavior, **not** art direction — the crop envelope, not the CSS property, decides what the viewer sees.
+- Medical/human imagery: the face may be a protected subject region; clinically relevant anatomy protected; treatment/device focal subjects must remain legible; crop must preserve intended meaning (e.g. an evidence comparison never crops away the comparison region).
+
 ## 3. Preferred qualities & prohibitions
 
 **Preferred:** natural skin texture · restrained retouching · soft controlled light · credible environments · consistent grading per clinic theme · diversity appropriate to the clinic's audience · high-quality composition.

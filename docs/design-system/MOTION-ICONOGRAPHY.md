@@ -34,9 +34,38 @@ Easing: `easing-standard` (ease-out family) for entrances/UI; `easing-emphasized
 - Image transitions: slow category, crossfade preferred; before/after compare interaction follows `SIGNATURE-PATTERNS.md` §4 (evidence clarity first).
 - Route transitions: **not defined** — may be justified later; not now.
 
+### 3A. Reduced motion — complete alternate presentation (strengthened, DESIGN-SYSTEM-VNEXT-01)
+
+Reduced motion is **a complete alternate presentation of the SAME content and navigation** — never an amputated experience. It must preserve hierarchy, orientation, information, actions, and route/scene comprehension. Under reduced motion the implementation may: replace spatial travel with state replacement · replace parallax with static composition · replace morph with cut/crossfade · replace ambient movement with still media. It may **never** leave content inaccessible because a motion trigger was disabled, hide content that motion would reveal, or flatten the journey into an unrecognizable outline. A reduced-motion pass requires the same rendered evidence as the motion presentation (same stages, same content — `DESIGN-QA.md` evidence rules).
+
 ## 4. Directional motion
 
 Directional UI motion follows locale direction; semantically fixed content does not mirror (`BIDIRECTIONAL-RESPONSIVE-ACCESSIBILITY.md` §A.3). Distinguish semantic direction from decorative mirroring.
+
+## 4A. Motion grammar chain and vocabulary (added DESIGN-SYSTEM-VNEXT-01)
+
+Motion authority extends from experience intent down to tokens — every motion decision traces upward to intent, never upward from "which animation looks cool":
+
+```text
+Experience Intent
+  ↓
+Treatment / Scene Signature      sensory vocabulary of the scene/treatment (COMPOSITION-CONTRACTS.md §8)
+  ↓
+Transition Grammar               how scenes/states connect
+  ↓
+Motion Primitive                 the reusable motion noun
+  ↓
+Duration / Easing                tokens (§2)
+```
+
+Reasoning vocabulary (non-mandatory, non-exhaustive — for describing and reviewing motion, not a required effects catalog):
+
+- **MATERIAL / PERCEPTUAL:** Light · Glass · Skin · Fluid · Particle · Filament · Surface · Depth
+- **MOTION:** Reveal · Morph · Focus · Expand · Contract · Flow · Scatter · Converge · Freeze
+- **SPATIAL:** Push · Pull · Orbit · Pass-through · Macro→Wide · Foreground→Background
+- **TRANSITION:** Mask · Light · Radial · Depth · Displacement · Morph
+
+Usage rules: primitives compose into transitions; a signature may reuse primitives across treatments; vocabulary terms appearing in a design/PR description must map to implementable behavior with intent (MOTION-01). No library or technology is mandated or implied by this vocabulary — simplest-technology-wins (`EXPERIENCE-DIRECTION.md` §4).
 
 # Part 2 — Iconography
 

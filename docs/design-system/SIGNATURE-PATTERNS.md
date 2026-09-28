@@ -124,3 +124,36 @@ Behavior (not implementation), respecting open decisions:
 - **Doctor attribution:** where clinically appropriate (authored/reviewed by) — honest, verifiable (`MEDICAL-TRUST-GOVERNANCE.md` §2).
 - **Consultation CTA restraint:** education-first; contextual consultation links only — no interstitials, no forced mid-article CTAs; publication dates honest (`SEO-FOUNDATION.md` §3).
 - Translation states apply: only `PUBLISHED` localized representations exist (A-6).
+
+## 16. Full-stage experience grammar (added DESIGN-SYSTEM-VNEXT-01)
+
+Cinematic and continuous-scroll experiences compose scenes from a shared spatial grammar. `COMPOSITION-CONTRACTS.md` §2 is the composition authority for a single stage; this section defines how stages/sequences behave over time:
+
+| Concept | Definition |
+|---|---|
+| **Stage** | one full-viewport composition unit — the rails/zones model (`COMPOSITION-CONTRACTS.md` §2) instantiated |
+| **Scene** | a semantic unit of the journey; may occupy a stage or a scroll region; the unit of route/URL meaning |
+| **Scene Content Region** | region holding the scene's primary content/text (Content Rail authority) |
+| **Media Field** | region for the scene's media, subject to the media composition contract (`PHOTOGRAPHY.md` §2A) |
+| **Action Field** | the scene's Action Zone instance (`COMPOSITION-CONTRACTS.md` §4) |
+| **Navigation Field** | the scene's Navigation Zone instance; progress controls live here only per §17 |
+| **Safe Region** | applicable safe-area exclusion respected by content/actions (`PRESENTATION-CONTEXTS.md` §4) |
+| **Transition Boundary** | the defined semantic/spatial edge at which one scene ends and the next begins |
+
+- **Persistence vs reset:** global navigation, skip link, locale switcher, and persistent trust/context elements may persist across scenes; scene-specific content, media, and actions reset per scene. Persistent chrome never overlaps a scene's focal subject or Action Field.
+- **Focus:** on scene advancement, keyboard focus moves to the new scene's primary landmark (or is retained when advancement is plain scroll); focus is never lost or trapped.
+- **Keyboard/touch:** scenes remain navigable by both. Scroll/touch advancement is the default; a keyboard path exists wherever advancement is interaction-gated.
+- **Accessibility:** all scene content exists in the accessibility tree regardless of motion state; reduced motion replaces transitions per `MOTION-ICONOGRAPHY.md` §3A without removing or hiding content.
+- **Mobile re-composition:** a scene re-composes per `LAYOUT-RESPONSIVE.md` §1 — rails/zones re-express per context; the grammar is never desktop-scene shrinking.
+- **URL semantics:** routes/URLs are independent of visual scene transitions. A scene is addressable when it carries route meaning; the visual transition is presentational and must never be load-bearing for content access.
+- **Technology-neutral:** no implementation technology is prescribed (`EXPERIENCE-DIRECTION.md` §4).
+- Prototypes and implementations must not invent fixed-position scene geometry outside this grammar without an admitted experimental exception (`AGENT-CONTRACT.md` §6).
+
+## 17. Navigation + progress existence rule (added DESIGN-SYSTEM-VNEXT-01)
+
+> Persistent progress exists only when knowing progress materially improves orientation, comprehension, or task completion.
+
+- Progress is **not decorative luxury chrome**. If the experience remains understandable without persistent progress, omission is preferred.
+- Where progress exists, it is: subordinate to primary content; never overlapping the focal subject; never competing with the primary action (`COMPOSITION-CONTRACTS.md` §4); safe-area aware (`PRESENTATION-CONTEXTS.md` §4); RTL/LTR direction-correct (`MOTION-ICONOGRAPHY.md` §6); accessible and understandable without relying on decorative geometry.
+- **Scene advancement and progress indication are separate responsibilities** — they are not merged automatically.
+- Existing contracts unchanged: sticky mobile conversion follows §9 (action restraint, not progress); journey patterns such as §3 TreatmentJourney decide progress per content need, not per aesthetic. QA: `DESIGN-QA.md` PROGRESS-01.

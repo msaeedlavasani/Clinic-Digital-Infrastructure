@@ -8,6 +8,7 @@
 ## 1. Principles
 
 - **Mobile is a first-class experience** (`BIDIRECTIONAL-RESPONSIVE-ACCESSIBILITY.md` §B): design compiles *up* from mobile, never shrinks from desktop.
+- **Responsive = re-composition, not proportional scaling (canonical, vNext):** a valid responsive implementation may change composition, ordering, media crop, relative emphasis, information density, navigation presentation, action placement, grouping, and spatial relationship — while preserving semantic hierarchy, content meaning, accessibility, brand/Visual World, and treatment/evidence integrity. The explicit failure `desktop layout × scale factor = mobile layout` is non-compliant (`DESIGN-QA.md` RESP-01).
 - Fluid layout; no horizontal overflow at any supported width, in any locale.
 - Do not overfit to one viewport; layout must survive text expansion/contraction (`TYPOGRAPHY.md` §6.6).
 - Whitespace and typography establish structure before boxes and borders (`DESIGN-TOKENS.md` §5, §7).
@@ -21,6 +22,21 @@
 | Desktop | 12-column grid |
 
 The grid is a **composition aid**, not a visible scaffold; editorial layouts may break the grid deliberately (editorial width) while text and forms respect it.
+
+### 2A. Stage geometry authorities (added DESIGN-SYSTEM-VNEXT-01)
+
+Page/scene geometry composes from named authorities — semantic, not coordinates (`COMPOSITION-CONTRACTS.md` §2 for full definitions):
+
+```text
+Viewport → Safe Area → Stage/Page
+  ├── Global Rail      persistent alignment authority
+  ├── Content Rail     text alignment + readable measure (container-text)
+  ├── Media Rail       visual subjects / bleed authority (container-editorial/full)
+  ├── Action Zone      primary/secondary action relationship
+  └── Navigation Zone  navigation + justified progress controls
+```
+
+Containers map: `container-text` → Content Rail measure · `container-editorial`/`container-full` → Media Rail · gutters → `space-page-inline`. Safe Area behavior (notch/cutout/home-indicator/browser chrome) is defined per presentation context (`PRESENTATION-CONTEXTS.md` §4) and enforced by `DESIGN-QA.md` SAFE-01. Compositions must be able to name which authority each major element consumes (`DESIGN-QA.md` LAYOUT-01); identical coordinates across all compositions are neither required nor assumed.
 
 ## 3. Containers & widths
 
@@ -55,18 +71,26 @@ Rhythm is generous by default — CDI pages breathe (`DESIGN-SYSTEM-CONSTITUTION
 
 ## 6. Responsive validation matrix
 
-Future QA validates at **six viewport classes** (not device models):
+Future QA validates at **viewport classes bound to presentation contexts** (not device models; context environmental rules: `PRESENTATION-CONTEXTS.md`):
 
-| Class | Conceptual width | Notes |
-|---|---|---|
-| Narrow mobile | ~360 | 320 content test included |
-| Common mobile | ~390–430 | primary traffic |
-| Large mobile | ~480+ | landscape stress |
-| Tablet | ~768–834 | adaptive grid, 2-up patterns |
-| Desktop | ~1024–1280 | 12-col grid |
-| All classes | both directions + long localized strings | bidirectional + language stress |
+| Class | Conceptual width | Context | Notes |
+|---|---|---|---|
+| Desktop Standard | ~1280 class | DESKTOP_WEB | 12-col grid |
+| Desktop Wide | ~1440–1728 class | DESKTOP_WEB | negative-space inspection (LAYOUT-02) |
+| iPhone Compact | compact portrait | IPHONE_WEB | narrow-content stress |
+| iPhone Modern | ~390 class portrait | IPHONE_WEB | primary touch traffic; safe areas |
+| iPhone Large | ~430 class portrait | IPHONE_WEB | landscape stress included |
+| Android Compact | compact portrait | ANDROID_WEB | narrow-content stress |
+| Android Standard | ~390–412 portrait | ANDROID_WEB | gesture + three-button nav |
+| Android Large | ~430 class portrait | ANDROID_WEB | device variance |
+| Tablet | ~768–834 | mobile-class composition at tablet width | adaptive grid, 2-up patterns |
+| All classes | — | both directions + long localized strings | bidirectional + language stress |
 
-**Every viewport class must be validated in RTL (fa) and LTR (en/ru) with long localized strings** — including long navigation labels, treatment names, and localized CTA length. A layout that only works when text is Persian is a defect.
+Class names are **emulation contexts, not commercial device claims** — correctness never binds to a device model. **Every class must be validated in RTL (fa) and LTR (en/ru)** for primary composition validation, with **system stress validation** (ar/RTL, ru/LTR, long localized strings, mixed-script strings, reduced motion, keyboard, touch, virtual keyboard where relevant, safe-area environments). A layout that only works when text is Persian is a defect.
+
+## 6A. Design QA linkage (vNext)
+
+Rendered validation consumes the rule registry in `DESIGN-QA.md` (LAYOUT-01/02, RESP-01, SAFE-01, MEDIA-01, BIDI-01, …); computed-CSS/DOM assertions alone never constitute a design pass. The standing surface for this validation is the harness specified in `VALIDATION-HARNESS.md` (SPECIFIED_ONLY until a canonical app shell exists).
 
 ## 7. Section behavior
 

@@ -15,7 +15,7 @@ Ten semantic roles (Foundation's 9 + `Small`):
 
 | Role | Use |
 |---|---|
-| Display | hero statements, major editorial statements |
+| Display | major editorial statements |
 | H1 | page titles |
 | H2 | section titles |
 | H3 | sub-section titles |
@@ -27,6 +27,26 @@ Ten semantic roles (Foundation's 9 + `Small`):
 | Label | form labels, buttons, chips, eyebrows |
 
 Sizes/weights/line-heights: `DESIGN-TOKENS.md` §4. Headings use Vazirmatn's heavier weights for Persian; hierarchy must remain coherent **without forcing identical metrics across scripts** (`TYPOGRAPHY.md` §3).
+
+### 2A. Cinematic roles — Hero and Scene Title (added DESIGN-SYSTEM-VNEXT-01)
+
+The continuous journey (`EXPERIENCE-DIRECTION.md` §2) introduced two expressive needs the ten roles could only express ambiguously: the flagship hero statement (display-scale but *identity-bearing*, not any editorial statement) and the immersive scene identity inside staged stages. Both are admitted as **capped cinematic roles** — the role list stays closed unless a genuinely ambiguous need recurs:
+
+| Role | Relationship to existing roles | Use |
+|---|---|---|
+| **Hero** | Display-scale expression reserved for the primary flagship/hero statement; Display remains the general major-editorial role | Hero composition primary statement (`COMPOSITION-CONTRACTS.md` §5.1) |
+| **Scene Title** | H3–H2 optical scale, scene-identity treatment; document hierarchy remains H1/H2/H3 | immersive/cinematic scene identity (`COMPOSITION-CONTRACTS.md` §5.3; full-stage grammar `SIGNATURE-PATTERNS.md` §16) |
+
+Distinction in one line: **Display** = major editorial statement · **Hero** = the flagship hero expression · **Scene Title** = cinematic scene identity · **H1/H2/H3** = document/information hierarchy. Role proliferation guard: cinematic roles may not be reused for generic section headers (that is H2/H3/Display's job), and one view carries at most one Hero and one Scene Title per scene.
+
+Context behavior (bounded/fluid; no per-device pixel freezing):
+
+| | DESKTOP_WEB | IPHONE_WEB / ANDROID_WEB |
+|---|---|---|
+| Hero | fluid display scale within measure bounds; wraps within Content Rail measure; tight Persian line-height verified against diacritic-free collision | fluid scale bounded by portrait width; wrapping expected and art-directed; never legibility-traded below AA |
+| Scene Title | H3–H2 optical range; one line preferred, two allowed | wraps freely; subordinate to scene media |
+
+Line-height, measure, and wrapping follow §4–5 (Persian metrics, balanced wrapping, no mid-word clamping). Persian behavior is the reference; other scripts harmonize optically. No Latin letter-spacing conventions leak into Persian — decorative tracking is a Latin-script device and is not applied to Persian text in any role.
 
 ## 3. Script-aware typography architecture
 

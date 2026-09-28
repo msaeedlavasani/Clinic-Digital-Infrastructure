@@ -44,6 +44,25 @@ Categories: `space` · `size` · `font-size` · `font-weight` · `line-height` �
 
 **Two distinct rhythms (canonical distinction):** *component spacing* lives in `space-50…500`; *page/section rhythm* lives in `space-600…1000`. CDI pages breathe — sections are separated generously; components stay compact. Responsive behavior in `LAYOUT-RESPONSIVE.md` §5.
 
+### 3A. Semantic spacing relationships (added DESIGN-SYSTEM-VNEXT-01)
+
+Primitives answer **"how much"**; semantic spacing answers **"between what"**. A semantic relationship token names a recurring spatial relationship and resolves (per context/world) to a primitive — it never introduces a new raw value. Component/page implementations consume these named relationships wherever the relationship recurs; unexplained local spacing values are violations (`DESIGN-QA.md` SPACE-01). A unique composition may use a deliberate one-off value only when its composition contract explains it in one sentence (`COMPOSITION-CONTRACTS.md` §6).
+
+| Relationship token | The relationship it names |
+|---|---|
+| `space-page-inline` | viewport/safe-area → page content (the inline gutter of the whole page) |
+| `space-stage-block` | stage boundary → stage content (a full stage's internal block padding) |
+| `space-section` | one section → the next major section (page rhythm) |
+| `space-scene` | scene boundary → scene content inside a cinematic stage (`SIGNATURE-PATTERNS.md` §16) |
+| `space-content-group` | heading/lead → the content group it introduces |
+| `space-copy` | paragraph ↔ paragraph within one copy block |
+| `space-media-copy` | media field ↔ its adjacent/copy region (media–text relationship) |
+| `space-action` | content/decision → its action system, and within the action system (`COMPOSITION-CONTRACTS.md` §4) |
+| `space-control` | label ↔ control, control ↔ control inside one form/cluster |
+| `space-safe-action` | action system → safe-area boundary (touch contexts; never zero — `PRESENTATION-CONTEXTS.md` §4.1) |
+
+Mapping discipline: each token has one mapping per presentation context class (e.g. `space-page-inline` mobile vs desktop), declared in implementation tokens — not re-derived per component.
+
 ## 4. Typography scale
 
 Semantic roles with v0.1 desktop reference values (fluid/responsive behavior: `TYPOGRAPHY.md` §3):

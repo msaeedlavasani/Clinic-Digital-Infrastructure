@@ -13,7 +13,7 @@ AI coding agents (and any contributor) performing implementation work on CDI are
 
 Every implementation agent must:
 
-1. **Read canonical governance before implementation** — at minimum `/docs/README.md`, `PRODUCT-CONSTITUTION.md`, `V1-SCOPE.md`, and `AGENT-CONTRACT.md` (this document), plus domain documents relevant to the task (localization work must also read `LOCALIZATION-FOUNDATION.md` and `BIDIRECTIONAL-RESPONSIVE-ACCESSIBILITY.md`).
+1. **Read canonical governance before implementation** — at minimum `/docs/README.md`, `PRODUCT-CONSTITUTION.md`, `V1-SCOPE.md`, and `AGENT-CONTRACT.md` (this document), plus domain documents relevant to the task — for UI/design-affecting work this starts at `/DESIGN.md`, the operational design-system front door — (localization work must also read `LOCALIZATION-FOUNDATION.md` and `BIDIRECTIONAL-RESPONSIVE-ACCESSIBILITY.md`).
 2. **Identify affected contracts** before changing code or schemas; name them in the plan or commit/PR description.
 3. **Not silently override canonical decisions.** If a task seems to require contradicting a canonical document, that is a conflict, not permission.
 4. **Distinguish requirement from assumption.** Requirements trace to canonical documents or the task; everything else is an assumption and must be labeled as such.
@@ -48,3 +48,31 @@ Escalation is a *successful* outcome of this contract, not a failure of the agen
 - Introduce a vendor commitment (CMS, database, analytics, translation, messaging) without an ADR.
 - Weaken an accessibility, bidirectional, localization, medical-trust, or privacy principle "temporarily".
 - Claim completion while a canonical contract is violated.
+
+## 6. Design enforcement (added DESIGN-SYSTEM-VNEXT-01)
+
+For any UI/design-affecting change, agents are additionally bound by the rendered-design QA layer (`DESIGN-QA.md`) entered through `/DESIGN.md`. The following prohibitions are hard:
+
+- **NO RAW DESIGN VALUES** — when an approved token or semantic relationship exists (`DESIGN-TOKENS.md`, including §3A semantic spacing), raw values must not be used.
+- **NO NEW TOKEN** — without a documented reusable semantic need.
+- **NO PAGE-SPECIFIC CSS FIX** — when the underlying requirement is reusable; fix the system, not the page.
+- **NO DEVICE-SPECIFIC COMPONENT FORK** — responsive re-composition solves context differences (`PRESENTATION-CONTEXTS.md` §5); no `IPhoneButton`/`AndroidButton`/`DesktopButton`.
+- **NO MAGIC POSITIONING** — every composition aligns to a named authority (`COMPOSITION-CONTRACTS.md` §2); QA `DESIGN-QA.md` LAYOUT-01.
+- **NO NEW PATTERN** — when an existing signature/system pattern satisfies the requirement (`SIGNATURE-PATTERNS.md`).
+- **NO VISUAL PASS** — from computed CSS, DOM inspection, or automated assertions alone; rendered evidence is mandatory (`DESIGN-QA.md` §1).
+- **NO RESPONSIVE PASS** — without rendered evidence across the required presentation contexts (`PRESENTATION-CONTEXTS.md` §2; `LAYOUT-RESPONSIVE.md` §6).
+- **NO DESIGN-SYSTEM PASS** — when a prototype or implementation has invented undocumented geometry or interaction grammar; inventions must be classified (§6.1), never passed silently.
+
+### 6.1 Classification route for unexpected design needs
+
+Before inventing a local fix, the agent classifies the need:
+
+| Class | Meaning | Consequence |
+|---|---|---|
+| `IMPLEMENTATION_VIOLATION` | a canonical contract exists; the implementation broke it | fix the implementation to the contract |
+| `SYSTEM_GAP` | a reusable requirement with no canonical answer | propose an additive contract/token extension via rationale-documented edit |
+| `CONTENT_ASSET_PROBLEM` | the design is sound; the content/asset fails the contract | fix the content/asset, not the layout |
+| `NEW_REUSABLE_PATTERN` | a genuinely new recurring pattern | propose admission per `CONTROLLED-VARIATION.md` §3 |
+| `EXPERIMENTAL_EXCEPTION` | a deliberate, bounded experiment | label explicitly, keep outside Core, never canonical by default |
+
+Inventing a local fix before classification violates this contract. Genuine owner-level conflicts route through §3 (stop-and-escalate).
