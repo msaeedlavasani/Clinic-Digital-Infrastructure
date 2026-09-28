@@ -24,7 +24,7 @@ Clinic themes map at the **semantic tier and below** (`CONTROLLED-VARIATION.md` 
 <role>[-<variant>]          semantic          surface-elevated, text-muted, action-primary-hover
 ```
 
-Categories: `space` · `size` · `font-size` · `font-weight` · `line-height` · `radius` · `border` · `elevation` · `duration` · `easing` · `breakpoint` · `container` · `layer` · colors by role name (semantic tier only).
+Categories: `space` · `size` · `font-size` · `font-weight` · `line-height` · `radius` · `border` · `elevation` · `duration` · `easing` · `breakpoint` · `container` · `layer` · colors by role name (semantic tier only). The canonical semantic color roles and per-world literal mappings are maintained in `COLOR-THEMING.md` and `VISUAL-WORLDS.md`.
 
 ## 3. Spacing (base-4 conceptual scale)
 

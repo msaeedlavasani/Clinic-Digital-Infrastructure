@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Architectural composition fixture</title>
+  <desc id="desc">Illustrative arch, light field, and protected abstract subject marker for crop validation.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#E5DCCB"/><stop offset="1" stop-color="#9C927F"/></linearGradient>
+    <linearGradient id="light" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#FFF7E4" stop-opacity=".9"/><stop offset="1" stop-color="#D7C6A4" stop-opacity=".15"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#wall)"/>
+  <path d="M120 760V310C120 100 290 0 500 0s380 100 380 310v450Z" fill="#5E5B55" opacity=".32"/>
+  <path d="M190 760V330C190 155 320 75 500 75s310 80 310 255v430Z" fill="url(#light)"/>
+  <rect x="885" y="0" width="315" height="760" fill="#6E756B" opacity=".24"/>
+  <path d="M900 760V0M1045 760V0" stroke="#F5EFE3" stroke-opacity=".4" stroke-width="3"/>
+  <ellipse cx="644" cy="540" rx="92" ry="124" fill="#564B40" opacity=".6"/>
+  <path d="M495 760c15-116 58-171 149-171s134 55 149 171" fill="#3A423E" opacity=".62"/>
+  <path d="M0 690h1200" stroke="#F6F0E6" stroke-opacity=".45" stroke-width="3"/>
+</svg>

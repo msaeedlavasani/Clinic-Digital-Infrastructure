@@ -1,6 +1,6 @@
 # Design System Validation Harness — Specification
 
-**Class:** CANONICAL (specification); implementation is a future stage and must not select a framework solely for this purpose.
+**Class:** CANONICAL (specification and implementation record); implementation follows the accepted application architecture in ADR-0001.
 **Origin:** DESIGN-SYSTEM-VNEXT-01 — defines the future standing validation surface for the Design System (`DESIGN-QA.md` §4; Constitution §9 gate D-4).
 
 ---
@@ -11,11 +11,9 @@ A **standing rendered surface** where the Design System is exercised and validat
 
 It is **not a marketing page**, not a prototype, and not a playground for invented patterns: it is a visual QA/reference surface rendering only canonical tokens, contracts, and approved variants.
 
-## 2. Status — SPECIFIED ONLY
+## 2. Status — IMPLEMENTED
 
-No canonical application shell exists yet (framework A-1 deliberately unmade; `docs/decisions/README.md`). **No framework, bundler, or app is selected or built for the harness in this task.** When a canonical shell exists and the harness can be added without prematurely selecting architecture, implementation is allowed; until then this document is the contract for that future work.
-
-A throwaway app built merely to claim this gate is prohibited.
+Application framework decision A-1 is resolved by [ADR-0001](../decisions/ADR-0001-APPLICATION-FRAMEWORK-AND-RENDERING.md), which selects Next.js App Router. `DS-IMPL-001` is resolved: the Owner approved the four initial Visual World directions and authorized derived semantic mappings with contrast verification. The working implementation uses the shared production Design System source under `src/design-system`; there is no separate harness token/component layer.
 
 ## 3. Required rendering inventory
 
@@ -51,3 +49,16 @@ Specimens render under the presentation contexts (`PRESENTATION-CONTEXTS.md` §2
 - Every inventory row renders without console/visual defects in both directions.
 - DESIGN-QA rules can be evaluated against harness captures without bespoke setup.
 - Adding a token/variant/world updates specimens without harness code forks (the harness consumes the same token/contract source of truth).
+
+## 7. Implementation status and run instructions
+
+**Status:** IMPLEMENTED — executable shared-system validation foundation; this status does not constitute Owner acceptance of every composition or a final visual-direction approval.
+
+- **Route:** `/design-system` (server-rendered semantic surface; scoped client controls).
+- **Run locally:** `npm install`, `npm run dev`; then open `http://localhost:3000/design-system`.
+- **Framework:** Next.js 16.3.6 App Router, verified on 2026-09-28 as the current 16.x release against the [Next.js support policy](https://nextjs.org/support-policy) and [official npm package metadata](https://www.npmjs.com/package/next); exact versions are pinned in `package.json` and `package-lock.json`.
+- **Automated checks:** `npm run typecheck`, `npm run build`, and `npx playwright install chromium` followed by `npm run test`.
+- **Fixture controls:** switch registered Visual World, language/direction (`fa-IR`, `en`, `ar`, `ru`), presentation context, experience mode, reduced-motion preview, and media-boundary overlays.
+- **Validation geometries:** 390×844, 430×932, 1024×768, and 1440×900. Context controls label iPhone/Android/Desktop semantics; responsive CSS recomposes fluidly and these sizes are evidence points, not device breakpoints.
+- **Evidence:** screenshots and a 136-pair measured contrast report are in `evidence/design-system-harness-01/`; the directory README identifies each fixture.
+- **Limitations:** fixtures use neutral illustration placeholders, not production clinic assets or clinical evidence. No consultation is submitted. Dedicated non-Persian fonts remain open. Subjective approval of each visual composition remains separate. The harness does not implement clinic routes, CMS, persistence, or the future public locale URL policy.

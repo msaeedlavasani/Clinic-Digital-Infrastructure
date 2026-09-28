@@ -10,7 +10,7 @@
 Components consume **semantic color roles** — never raw hex/named colors. Roles (token structure: `DESIGN-TOKENS.md` §11):
 
 ### Backgrounds
-`canvas` (page) · `surface` (resting content) · `surface-subtle` (tonal grouping) · `surface-strong` (inverted/strong sections) · `surface-inverse`
+`canvas` (page) · `surface` (resting content) · `surface-subtle` (tonal grouping) · `surface-strong` (inverted/strong sections) · `surface-inverse` · `surface-elevated`
 
 ### Text
 `text-primary` · `text-secondary` · `text-muted` · `text-inverse`
@@ -19,31 +19,33 @@ Components consume **semantic color roles** — never raw hex/named colors. Role
 `border-subtle` · `border-default` · `border-strong`
 
 ### Actions
-`action-primary`/`-hover`/`-active` · `action-secondary`/`-hover`/`-active`
+`action-primary` + `action-primary-text`/`-hover`/`-active` · `action-secondary` + `action-secondary-text`/`-hover`/`-active`
 
 ### Feedback
 `success` · `warning` · `danger` · `information` (each with a `-surface` background pairing)
+
+Validation error messages use the canonical `danger` foreground with `danger-surface`; `error` is the feedback intent, not a second duplicate color role.
 
 ### Brand expression
 `brand-primary` · `brand-secondary` · `accent`
 
 ### Focus
-`focus-ring` — always-visible focus indicator; floor independent of theme.
+`focus-ring-light` + `focus-ring-dark` — a dual always-visible focus indicator; at least one ring has 3:1 contrast against each adjacent surface.
 
 ## 2. Theme mapping contract
 
-A clinic theme is a **mapping into the semantic role set** (plus imagery/variants — §4). Contract:
+A clinic Visual World is a **mapping into the semantic role set** (plus separately governed imagery/variants — §4). The initial validation registry is extensible; it is not a closed four-world limit. Contract:
 
 1. **Only semantic tier and below.** Themes map onto roles; they never override component internals (`DESIGN-SYSTEM-CONSTITUTION.md` §4 canonical rule).
 2. **Contrast is a validity condition.** Every mapping must satisfy WCAG 2.1 AA for its role pairings: text-on-surface ≥ 4.5:1 (large text ≥ 3:1), action labels ≥ 4.5:1, focus indicators ≥ 3:1 against adjacent surfaces, non-text UI boundaries where meaning depends on them. **A theme that cannot satisfy contrast is an invalid theme** — not a configuration option.
 3. **Full coverage.** Every role must be mapped; no "unstyled" roles.
-4. **Feedback colors are functional, not decorative** — `danger` is not a brand color; feedback semantics stay recognizable across themes.
+4. **Feedback colors are functional, not decorative** — `danger` is not a brand color; feedback semantics stay recognizable across worlds. Feedback text and its surface pairing meet 4.5:1.
 5. **Brand vs action decoupling.** `brand-primary` is expressive (surfaces, moments); `action-primary` is functional (CTAs). They may be related, but a theme may keep them distinct — the CTA stays the CTA in every locale and theme.
 6. **One theme per clinic across locales.** A single Clinic Theme works across all supported locales; themes are never the mechanism for RTL/LTR (`PLATFORM-BOUNDARIES.md` §3).
 
 ## 3. Theme families → superseded by Visual Worlds
 
-> **Amended (DESIGN-AMENDMENT-01):** the closed PEARL/MINERAL/OBSIDIAN family set below is superseded by the open **Visual Worlds** model (`VISUAL-WORLDS.md` — Dark Cinematic · Luminous Luxury · Clinical Architectural · Natural Prestige). The mapping contract (§2) and accessibility validity condition remain fully canonical; the family names and any prototype-era values are historical evidence only.
+> **Amended (DESIGN-AMENDMENT-01):** the closed PEARL/MINERAL/OBSIDIAN family set below is superseded by the extensible **Visual Worlds** model (`VISUAL-WORLDS.md`). The initial validation set is Dark Cinematic, Luminous Luxury, Clinical Architectural, and Natural Prestige. The mapping contract (§2) and accessibility validity condition remain fully canonical; the family names and any prototype-era values are historical evidence only.
 
 The original three conceptual directions (superseded as a closed set; retained as exploration history):
 

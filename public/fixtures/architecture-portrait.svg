@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait crop composition fixture</title>
+  <desc id="desc">Illustrative protected subject placeholder inside a warm architectural arch. Not a real person.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" x2="0.8" y1="0" y2="1"><stop stop-color="#DED3C0"/><stop offset="1" stop-color="#938977"/></linearGradient>
+    <linearGradient id="light" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#FFF8EA" stop-opacity=".95"/><stop offset="1" stop-color="#DCC8A2" stop-opacity=".2"/></linearGradient>
+  </defs>
+  <rect width="720" height="960" fill="url(#wall)"/>
+  <path d="M82 960V405C82 166 206 34 360 34s278 132 278 371v555Z" fill="#5B574F" opacity=".28"/>
+  <path d="M137 960V420C137 230 224 98 360 98s223 132 223 322v540Z" fill="url(#light)"/>
+  <circle cx="370" cy="447" r="87" fill="#5B5045" opacity=".64"/>
+  <path d="M225 900c12-185 55-276 145-276s133 91 145 276" fill="#35423C" opacity=".68"/>
+  <rect x="0" y="825" width="720" height="135" fill="#817461" opacity=".3"/>
+  <path d="M0 818h720" stroke="#F5EEE1" stroke-opacity=".6" stroke-width="3"/>
+</svg>

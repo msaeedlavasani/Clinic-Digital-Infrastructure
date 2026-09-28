@@ -1,0 +1,1087 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textPrimary / canvas",
+      "ratio": 16.812813933748117,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textPrimary / surface",
+      "ratio": 15.103977085774199,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textPrimary / surfaceSubtle",
+      "ratio": 14.089687602805162,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textPrimary / surfaceElevated",
+      "ratio": 13.211054040458023,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textSecondary / canvas",
+      "ratio": 12.248002447163358,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textSecondary / surface",
+      "ratio": 11.003128270939039,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textSecondary / surfaceSubtle",
+      "ratio": 10.264226376319227,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textSecondary / surfaceElevated",
+      "ratio": 9.624148750753754,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textMuted / canvas",
+      "ratio": 8.245437432155823,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textMuted / surface",
+      "ratio": 7.407379783551955,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textMuted / surfaceSubtle",
+      "ratio": 6.909946070024237,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textMuted / surfaceElevated",
+      "ratio": 6.479041517539819,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionPrimary / canvas",
+      "ratio": 9.721830262844968,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionPrimary / surface",
+      "ratio": 8.733713588957894,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionPrimary / surfaceSubtle",
+      "ratio": 8.147211517997576,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionPrimary / surfaceElevated",
+      "ratio": 7.639151035675124,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "brandPrimary / canvas",
+      "ratio": 6.398450941436077,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "brandPrimary / surface",
+      "ratio": 5.7481190706519785,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "brandPrimary / surfaceSubtle",
+      "ratio": 5.362111022102479,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "brandPrimary / surfaceElevated",
+      "ratio": 5.027729533891713,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "textInverse / surfaceStrong",
+      "ratio": 17.799456151016955,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionPrimaryText / actionPrimary",
+      "ratio": 9.389676272992839,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionPrimaryText / actionPrimaryHover",
+      "ratio": 11.134793735911394,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionPrimaryText / actionPrimaryActive",
+      "ratio": 7.567140701267628,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionSecondaryText / actionSecondary",
+      "ratio": 12.02460365606881,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionSecondaryText / actionSecondaryHover",
+      "ratio": 10.075998217185168,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "actionSecondaryText / actionSecondaryActive",
+      "ratio": 8.242402418389652,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "success / successSurface",
+      "ratio": 8.78019397183437,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "warning / warningSurface",
+      "ratio": 9.238559066342535,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "danger / dangerSurface",
+      "ratio": 8.299018712188705,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "information / informationSurface",
+      "ratio": 8.841638004238886,
+      "minimum": 4.5
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "borderDefault / canvas",
+      "ratio": 4.277738632858677,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "borderDefault / surface",
+      "ratio": 3.8429537461267,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "borderDefault / surfaceElevated",
+      "ratio": 3.3613312127491284,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "borderStrong / canvas",
+      "ratio": 6.321003848296935,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "borderStrong / surface",
+      "ratio": 5.678543619169381,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "borderStrong / surfaceElevated",
+      "ratio": 4.966873704714669,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "dual focus ring / canvas",
+      "ratio": 18.620130010408303,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "dual focus ring / surface",
+      "ratio": 16.727599444065607,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "dual focus ring / surfaceSubtle",
+      "ratio": 15.604277547118702,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "dual focus ring / surfaceElevated",
+      "ratio": 14.631194086677128,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "dual focus ring / actionPrimary",
+      "ratio": 8.288135959312436,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "dual focus ring / actionSecondary",
+      "ratio": 13.3172046203522,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "dual focus ring / actionSecondaryHover",
+      "ratio": 11.159131215508811,
+      "minimum": 3
+    },
+    {
+      "world": "Dark Cinematic",
+      "pairing": "dual focus ring / actionSecondaryActive",
+      "ratio": 9.128430566905388,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textPrimary / canvas",
+      "ratio": 13.754421932199023,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textPrimary / surface",
+      "ratio": 14.874142633523823,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textPrimary / surfaceSubtle",
+      "ratio": 12.387198749423018,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textPrimary / surfaceElevated",
+      "ratio": 15.019817380619402,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textSecondary / canvas",
+      "ratio": 7.40185371131336,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textSecondary / surface",
+      "ratio": 8.004424206066991,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textSecondary / surfaceSubtle",
+      "ratio": 6.666091347797857,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textSecondary / surfaceElevated",
+      "ratio": 8.082818134415943,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textMuted / canvas",
+      "ratio": 5.845636622571244,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textMuted / surface",
+      "ratio": 6.321518515025952,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textMuted / surfaceSubtle",
+      "ratio": 5.26456604411575,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textMuted / surfaceElevated",
+      "ratio": 6.3834303598714435,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionPrimary / canvas",
+      "ratio": 7.999719289243131,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionPrimary / surface",
+      "ratio": 8.650960856290272,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionPrimary / surfaceSubtle",
+      "ratio": 7.204527624928312,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionPrimary / surfaceElevated",
+      "ratio": 8.735686851322315,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "brandPrimary / canvas",
+      "ratio": 4.4703700325626805,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "brandPrimary / surface",
+      "ratio": 4.834294150400338,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "brandPrimary / surfaceSubtle",
+      "ratio": 4.026004316996062,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "brandPrimary / surfaceElevated",
+      "ratio": 4.881640380371132,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "textInverse / surfaceStrong",
+      "ratio": 13.794623759233636,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionPrimaryText / actionPrimary",
+      "ratio": 8.650960856290272,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionPrimaryText / actionPrimaryHover",
+      "ratio": 10.594112858161123,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionPrimaryText / actionPrimaryActive",
+      "ratio": 12.799691898560967,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionSecondaryText / actionSecondary",
+      "ratio": 10.033037992016554,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionSecondaryText / actionSecondaryHover",
+      "ratio": 8.801038387239686,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "actionSecondaryText / actionSecondaryActive",
+      "ratio": 7.573226911780106,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "success / successSurface",
+      "ratio": 5.791972294713156,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "warning / warningSurface",
+      "ratio": 5.937962392951728,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "danger / dangerSurface",
+      "ratio": 6.092894306855739,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "information / informationSurface",
+      "ratio": 6.38095898676999,
+      "minimum": 4.5
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "borderDefault / canvas",
+      "ratio": 3.6283370255415948,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "borderDefault / surface",
+      "ratio": 3.923712876225029,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "borderDefault / surfaceElevated",
+      "ratio": 3.962141032724718,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "borderStrong / canvas",
+      "ratio": 3.3545923820648467,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "borderStrong / surface",
+      "ratio": 3.627683214469168,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "borderStrong / surfaceElevated",
+      "ratio": 3.6632121083241733,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "dual focus ring / canvas",
+      "ratio": 14.33452162202271,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "dual focus ring / surface",
+      "ratio": 15.501467109291227,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "dual focus ring / surfaceSubtle",
+      "ratio": 12.909635111179721,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "dual focus ring / surfaceElevated",
+      "ratio": 15.653285762399133,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "dual focus ring / actionPrimary",
+      "ratio": 8.858967025170593,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "dual focus ring / actionSecondary",
+      "ratio": 12.14573430779534,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "dual focus ring / actionSecondaryHover",
+      "ratio": 10.654307695154639,
+      "minimum": 3
+    },
+    {
+      "world": "Luminous Luxury",
+      "pairing": "dual focus ring / actionSecondaryActive",
+      "ratio": 9.167951122712624,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textPrimary / canvas",
+      "ratio": 13.53148825308071,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textPrimary / surface",
+      "ratio": 14.575609595801373,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textPrimary / surfaceSubtle",
+      "ratio": 12.641711277637956,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textPrimary / surfaceElevated",
+      "ratio": 14.575609595801373,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textSecondary / canvas",
+      "ratio": 6.818439829900689,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textSecondary / surface",
+      "ratio": 7.34456662521717,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textSecondary / surfaceSubtle",
+      "ratio": 6.370086281819517,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textSecondary / surfaceElevated",
+      "ratio": 7.34456662521717,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textMuted / canvas",
+      "ratio": 5.480484784633634,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textMuted / surface",
+      "ratio": 5.90337183335047,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textMuted / surfaceSubtle",
+      "ratio": 5.120109851409188,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textMuted / surfaceElevated",
+      "ratio": 5.90337183335047,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionPrimary / canvas",
+      "ratio": 6.484521561788567,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionPrimary / surface",
+      "ratio": 6.984882441047676,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionPrimary / surfaceSubtle",
+      "ratio": 6.058125154052119,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionPrimary / surfaceElevated",
+      "ratio": 6.984882441047676,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "brandPrimary / canvas",
+      "ratio": 8.758422706227988,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "brandPrimary / surface",
+      "ratio": 9.434243126355087,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "brandPrimary / surfaceSubtle",
+      "ratio": 8.182503581927492,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "brandPrimary / surfaceElevated",
+      "ratio": 9.434243126355087,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "textInverse / surfaceStrong",
+      "ratio": 12.471705042433022,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionPrimaryText / actionPrimary",
+      "ratio": 6.984882441047676,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionPrimaryText / actionPrimaryHover",
+      "ratio": 8.758029641936545,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionPrimaryText / actionPrimaryActive",
+      "ratio": 10.99099385674051,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionSecondaryText / actionSecondary",
+      "ratio": 9.526491748302858,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionSecondaryText / actionSecondaryHover",
+      "ratio": 8.789153412185412,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "actionSecondaryText / actionSecondaryActive",
+      "ratio": 7.951332678330625,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "success / successSurface",
+      "ratio": 6.220117825268796,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "warning / warningSurface",
+      "ratio": 6.255973738662456,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "danger / dangerSurface",
+      "ratio": 6.271245444724344,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "information / informationSurface",
+      "ratio": 6.668615104325688,
+      "minimum": 4.5
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "borderDefault / canvas",
+      "ratio": 3.507011829751859,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "borderDefault / surface",
+      "ratio": 3.7776210807175903,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "borderDefault / surfaceElevated",
+      "ratio": 3.7776210807175903,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "borderStrong / canvas",
+      "ratio": 3.3923062046167,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "borderStrong / surface",
+      "ratio": 3.6540645007507284,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "borderStrong / surfaceElevated",
+      "ratio": 3.6540645007507284,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "dual focus ring / canvas",
+      "ratio": 14.73704395741593,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "dual focus ring / surface",
+      "ratio": 15.874188803330965,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "dual focus ring / surfaceSubtle",
+      "ratio": 13.767994422424012,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "dual focus ring / surfaceElevated",
+      "ratio": 15.874188803330965,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "dual focus ring / actionPrimary",
+      "ratio": 6.984882441047676,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "dual focus ring / actionSecondary",
+      "ratio": 13.481677234110336,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "dual focus ring / actionSecondaryHover",
+      "ratio": 12.438212575502693,
+      "minimum": 3
+    },
+    {
+      "world": "Clinical Architectural",
+      "pairing": "dual focus ring / actionSecondaryActive",
+      "ratio": 11.252547483640525,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textPrimary / canvas",
+      "ratio": 12.096302038291025,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textPrimary / surface",
+      "ratio": 13.206096123528722,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textPrimary / surfaceSubtle",
+      "ratio": 10.887610719693475,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textPrimary / surfaceElevated",
+      "ratio": 13.551041585689639,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textSecondary / canvas",
+      "ratio": 6.885327385999776,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textSecondary / surface",
+      "ratio": 7.517032479318301,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textSecondary / surfaceSubtle",
+      "ratio": 6.197329069587394,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textSecondary / surfaceElevated",
+      "ratio": 7.713378637819851,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textMuted / canvas",
+      "ratio": 5.103818617464594,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textMuted / surface",
+      "ratio": 5.572076411942457,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textMuted / surfaceSubtle",
+      "ratio": 4.593832901574056,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textMuted / surfaceElevated",
+      "ratio": 5.717619989327827,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionPrimary / canvas",
+      "ratio": 6.739795567872227,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionPrimary / surface",
+      "ratio": 7.358148617693442,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionPrimary / surfaceSubtle",
+      "ratio": 6.066339137450592,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionPrimary / surfaceElevated",
+      "ratio": 7.550344702882982,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "brandPrimary / canvas",
+      "ratio": 5.834185507716137,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "brandPrimary / surface",
+      "ratio": 6.36945195097681,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "brandPrimary / surfaceSubtle",
+      "ratio": 5.251219792083229,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "brandPrimary / surfaceElevated",
+      "ratio": 6.535823112173111,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "textInverse / surfaceStrong",
+      "ratio": 10.292623656143228,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionPrimaryText / actionPrimary",
+      "ratio": 7.6801048463653165,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionPrimaryText / actionPrimaryHover",
+      "ratio": 9.534797279783113,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionPrimaryText / actionPrimaryActive",
+      "ratio": 11.81863673130198,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionSecondaryText / actionSecondary",
+      "ratio": 9.524481029151223,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionSecondaryText / actionSecondaryHover",
+      "ratio": 8.756952694868044,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "actionSecondaryText / actionSecondaryActive",
+      "ratio": 7.8284601069302475,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "success / successSurface",
+      "ratio": 5.791972294713156,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "warning / warningSurface",
+      "ratio": 5.937962392951728,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "danger / dangerSurface",
+      "ratio": 6.092894306855739,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "information / informationSurface",
+      "ratio": 6.38095898676999,
+      "minimum": 4.5
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "borderDefault / canvas",
+      "ratio": 3.6853483498611137,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "borderDefault / surface",
+      "ratio": 4.023466378641272,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "borderDefault / surfaceElevated",
+      "ratio": 4.12856000029049,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "borderStrong / canvas",
+      "ratio": 3.1986127357666025,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "borderStrong / surface",
+      "ratio": 3.4920744469476555,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "borderStrong / surfaceElevated",
+      "ratio": 3.5832880215525345,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "dual focus ring / canvas",
+      "ratio": 13.9306415056157,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "dual focus ring / surface",
+      "ratio": 15.208729924502707,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "dual focus ring / surfaceSubtle",
+      "ratio": 12.538658617206337,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "dual focus ring / surfaceElevated",
+      "ratio": 15.605984519927109,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "dual focus ring / actionPrimary",
+      "ratio": 7.6801048463653165,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "dual focus ring / actionSecondary",
+      "ratio": 13.0215365991228,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "dual focus ring / actionSecondaryHover",
+      "ratio": 11.972198764846823,
+      "minimum": 3
+    },
+    {
+      "world": "Natural Prestige",
+      "pairing": "dual focus ring / actionSecondaryActive",
+      "ratio": 10.702796245293094,
+      "minimum": 3
+    }
+  ],
+  "failures": [],
+  "minimumRatio": 3.1986127357666025
+}

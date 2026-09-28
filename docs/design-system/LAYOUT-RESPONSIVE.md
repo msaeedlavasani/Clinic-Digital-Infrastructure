@@ -90,7 +90,7 @@ Class names are **emulation contexts, not commercial device claims** — correct
 
 ## 6A. Design QA linkage (vNext)
 
-Rendered validation consumes the rule registry in `DESIGN-QA.md` (LAYOUT-01/02, RESP-01, SAFE-01, MEDIA-01, BIDI-01, …); computed-CSS/DOM assertions alone never constitute a design pass. The standing surface for this validation is the harness specified in `VALIDATION-HARNESS.md` (SPECIFIED_ONLY until a canonical app shell exists).
+Rendered validation consumes the rule registry in `DESIGN-QA.md` (LAYOUT-01/02, RESP-01, SAFE-01, MEDIA-01, BIDI-01, …); computed-CSS/DOM assertions alone never constitute a design pass. The executable standing surface is `/design-system`, documented in `VALIDATION-HARNESS.md`; its implementation includes rendered evidence and automated smoke checks.
 
 ## 7. Section behavior
 

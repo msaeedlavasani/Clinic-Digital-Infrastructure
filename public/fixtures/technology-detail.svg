@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Technology framing fixture</title>
+  <desc id="desc">A neutral equipment silhouette used only to test focal and crop metadata.</desc>
+  <defs><linearGradient id="room" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#DEE6E9"/><stop offset="1" stop-color="#9CAEB3"/></linearGradient></defs>
+  <rect width="1200" height="760" fill="url(#room)"/>
+  <path d="M90 0v760M1110 0v760M90 168h1020M90 585h1020" stroke="#F8FAF8" stroke-opacity=".55" stroke-width="4"/>
+  <rect x="465" y="105" width="260" height="470" rx="12" fill="#344955"/>
+  <rect x="492" y="137" width="206" height="154" rx="6" fill="#BDD1D2"/>
+  <circle cx="595" cy="213" r="49" fill="#E8F2EE" opacity=".8"/>
+  <path d="M500 335h190M500 368h132" stroke="#AFC2C2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M515 575v86m162-86v86m-194 0h225" stroke="#344955" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="595" cy="481" r="32" fill="#7997A0"/>
+</svg>
