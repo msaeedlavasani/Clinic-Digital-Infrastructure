@@ -19,6 +19,20 @@ export function TextAction(props: ButtonHTMLAttributes<HTMLButtonElement> & { ch
   return <Button variant="text" {...props} />;
 }
 
+export function ActionLink({
+  href,
+  variant = "primary",
+  className = "",
+  children,
+}: {
+  href: string;
+  variant?: ButtonVariant;
+  className?: string;
+  children: ReactNode;
+}) {
+  return <a className={`cdi-button cdi-button--${variant} ${className}`.trim()} href={href}>{children}</a>;
+}
+
 export function IconButton({
   label,
   children,

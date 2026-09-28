@@ -201,7 +201,8 @@ test("shared components and route have no Visual World name branches", () => {
   const sourceRoots = [
     join(process.cwd(), "src/design-system/components"),
     join(process.cwd(), "src/design-system/primitives"),
-    join(process.cwd(), "src/app/design-system"),
+    join(process.cwd(), "src/app/(tooling)/design-system"),
+    join(process.cwd(), "src/app/(clinic)"),
   ];
   const files: string[] = [];
   const collect = (directory: string) => {

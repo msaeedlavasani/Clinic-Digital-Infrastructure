@@ -6,10 +6,10 @@ export function NavigationLink({ href, children }: { href: string; children: Rea
   return <a className="cdi-link" href={href}>{children}</a>;
 }
 
-export function SiteHeader({ brand, items, action }: { brand: ReactNode; items: NavigationItem[]; action: NavigationItem }) {
+export function SiteHeader({ brand, items, action, brandHref = "#top", trailing }: { brand: ReactNode; items: NavigationItem[]; action: NavigationItem; brandHref?: string; trailing?: ReactNode }) {
   return (
     <header className="cdi-site-header">
-      <a className="cdi-site-header__brand" href="#top">{brand}</a>
+      <a className="cdi-site-header__brand" href={brandHref}>{brand}</a>
       <nav className="cdi-site-header__desktop" aria-label="Primary">
         {items.map((item) => <NavigationLink key={item.href} {...item}>{item.label}</NavigationLink>)}
         <NavigationLink {...action}>{action.label}</NavigationLink>
@@ -22,6 +22,7 @@ export function SiteHeader({ brand, items, action }: { brand: ReactNode; items: 
           <NavigationLink {...action}>{action.label}</NavigationLink>
         </nav>
       </details>
+      {trailing}
     </header>
   );
 }

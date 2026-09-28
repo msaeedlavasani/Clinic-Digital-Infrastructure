@@ -1,0 +1,325 @@
+{
+  "capturedAgainst": "Playwright configured runtime",
+  "snapshots": {
+    "initialHome": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "reducedMotion": false,
+      "images": [
+        {
+          "src": "/fixtures/architecture-wide.svg",
+          "loading": "eager",
+          "fetchPriority": "high",
+          "complete": true,
+          "naturalWidth": 237
+        }
+      ],
+      "resources": [
+        {
+          "name": "/_next/static/chunks/_1r3yjtk._.css",
+          "initiatorType": "link",
+          "durationMs": 34,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+          "initiatorType": "link",
+          "durationMs": 82,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+          "initiatorType": "script",
+          "durationMs": 45,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+          "initiatorType": "script",
+          "durationMs": 46,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+          "initiatorType": "script",
+          "durationMs": 46,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+          "initiatorType": "script",
+          "durationMs": 104,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+          "initiatorType": "script",
+          "durationMs": 111,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+          "initiatorType": "script",
+          "durationMs": 114,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+          "initiatorType": "script",
+          "durationMs": 128,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/_1anvha4._.js",
+          "initiatorType": "script",
+          "durationMs": 149,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-_08bm286._.js",
+          "initiatorType": "script",
+          "durationMs": 150,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/fixtures/architecture-wide.svg",
+          "initiatorType": "img",
+          "durationMs": 43,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/_1swa2hq._.js",
+          "initiatorType": "script",
+          "durationMs": 171,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_20wefz_._.js",
+          "initiatorType": "script",
+          "durationMs": 171,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/media/vazirmatn-arabic-wght-normal.0tzxgo2fuaf-x.woff2",
+          "initiatorType": "css",
+          "durationMs": 0,
+          "transferSize": 0,
+          "encodedBodySize": 46308
+        },
+        {
+          "name": "/_next/static/media/vazirmatn-latin-wght-normal.00gnhmt88g2y1.woff2",
+          "initiatorType": "css",
+          "durationMs": 0,
+          "transferSize": 0,
+          "encodedBodySize": 34524
+        },
+        {
+          "name": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+          "initiatorType": "script",
+          "durationMs": 122,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        }
+      ],
+      "clientModuleSources": [
+        "/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "/_next/static/chunks/_1anvha4._.js",
+        "/_next/static/chunks/turbopack-_08bm286._.js",
+        "/_next/static/chunks/_1swa2hq._.js",
+        "/_next/static/chunks/node_modules_next_dist_20wefz_._.js",
+        "/_next/static/chunks/node_modules_next_dist_build_polyfills_polyfill-nomodule.js",
+        "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js"
+      ]
+    },
+    "reducedMotionTreatment": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "reducedMotion": true,
+      "images": [
+        {
+          "src": "/fixtures/architecture-portrait.svg",
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "complete": true,
+          "naturalWidth": 113
+        },
+        {
+          "src": "/fixtures/technology-detail.svg",
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "complete": true,
+          "naturalWidth": 237
+        }
+      ],
+      "resources": [
+        {
+          "name": "/_next/static/chunks/_1r3yjtk._.css",
+          "initiatorType": "link",
+          "durationMs": 19,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+          "initiatorType": "link",
+          "durationMs": 24,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+          "initiatorType": "script",
+          "durationMs": 22,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+          "initiatorType": "script",
+          "durationMs": 22,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+          "initiatorType": "script",
+          "durationMs": 23,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+          "initiatorType": "script",
+          "durationMs": 38,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+          "initiatorType": "script",
+          "durationMs": 36,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+          "initiatorType": "script",
+          "durationMs": 41,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/_1anvha4._.js",
+          "initiatorType": "script",
+          "durationMs": 45,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+          "initiatorType": "script",
+          "durationMs": 52,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-_08bm286._.js",
+          "initiatorType": "script",
+          "durationMs": 45,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/_0b9nouy._.js",
+          "initiatorType": "script",
+          "durationMs": 57,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/chunks/node_modules_next_dist_20wefz_._.js",
+          "initiatorType": "script",
+          "durationMs": 57,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/fixtures/architecture-portrait.svg",
+          "initiatorType": "img",
+          "durationMs": 53,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/fixtures/technology-detail.svg",
+          "initiatorType": "img",
+          "durationMs": 54,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "/_next/static/media/vazirmatn-arabic-wght-normal.0tzxgo2fuaf-x.woff2",
+          "initiatorType": "css",
+          "durationMs": 0,
+          "transferSize": 0,
+          "encodedBodySize": 46308
+        },
+        {
+          "name": "/_next/static/media/vazirmatn-latin-wght-normal.00gnhmt88g2y1.woff2",
+          "initiatorType": "css",
+          "durationMs": 0,
+          "transferSize": 0,
+          "encodedBodySize": 34524
+        },
+        {
+          "name": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+          "initiatorType": "script",
+          "durationMs": 5,
+          "transferSize": 300,
+          "encodedBodySize": 0
+        }
+      ],
+      "clientModuleSources": [
+        "/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "/_next/static/chunks/_1anvha4._.js",
+        "/_next/static/chunks/turbopack-_08bm286._.js",
+        "/_next/static/chunks/_0b9nouy._.js",
+        "/_next/static/chunks/node_modules_next_dist_20wefz_._.js",
+        "/_next/static/chunks/node_modules_next_dist_build_polyfills_polyfill-nomodule.js",
+        "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js"
+      ]
+    }
+  }
+}
