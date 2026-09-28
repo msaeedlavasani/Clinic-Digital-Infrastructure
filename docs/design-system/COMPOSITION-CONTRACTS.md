@@ -14,14 +14,14 @@ A composition contract answers: *what must this surface accomplish spatially, an
 
 Failure classification: an implementation that invents geometry or composition this document does not authorize, outside an admitted experimental exception, is a design-system violation (`AGENT-CONTRACT.md` §6).
 
-## 2. Stage / page geometry model
+## 2. Composition-stage / page geometry model
 
 Every contract below composes from these semantic geometry authorities (`LAYOUT-RESPONSIVE.md` §2A defines their token mapping):
 
 ```text
 Viewport
   └── Safe Area                    exclusion region: notch/cutout/home-indicator/browser/system chrome
-      └── Stage / Page
+      └── Composition Stage / Page
           ├── Global Rail          persistent alignment authority shared by major elements
           ├── Content Rail         primary text alignment + readable-measure authority
           ├── Media Rail           authority for visual subjects / bleed
@@ -37,6 +37,8 @@ Viewport
 - **Safe Area** — physical/browser/system exclusion region (`PRESENTATION-CONTEXTS.md` §4.1); content/actions respect it.
 
 These are **semantic authorities, not coordinates**: compositions do not force all elements onto identical positions. Two clinics (or two pages) may place their Media Rail differently; both must be able to name which authority each element consumes.
+
+Here, **Composition Stage** means the spatial rails/zones of one composition. It is not the bounded persistent **Experience Stage** that hosts cinematic Scene progression; that runtime contract is defined in `../architecture/EXPERIENCE-RUNTIME-CONTRACT.md`.
 
 ## 3. Contract format
 
@@ -60,7 +62,7 @@ Forbidden across all contracts: detached CTA islands; CTAs floating in unrelated
 
 ### 5.1 Hero
 
-- **PURPOSE:** establish the Visual World and the clinic's positioning in one cinematic statement; launch the continuous journey (`EXPERIENCE-DIRECTION.md` §2).
+- **PURPOSE:** establish the Visual World and the clinic's positioning in one cinematic statement; launch the continuous Scene journey inside the persistent Experience Stage (`EXPERIENCE-DIRECTION.md` §2; `architecture/EXPERIENCE-RUNTIME-CONTRACT.md`).
 - **PRIMARY SUBJECT:** the positioning statement (typography-led) **or** an art-directed media field (immersive) — per Hero family (`CONTROLLED-VARIATION.md` §5.1).
 - **PRIMARY MESSAGE:** who the clinic is, in patient language, medical register.
 - **HIERARCHY:** Hero/Display statement → supporting lede → discovery affordance/primary CTA.
@@ -222,7 +224,7 @@ Negative space is legitimate when it deliberately provides: subject isolation ·
 
 **Critical rule:** a mode transition must not feel like leaving the clinic's Visual World — the world persists while interaction density and information behavior change. Neither mode is "the real site"; both are the same system. Editorial facts are never cinematic-degraded (risks stay fully readable); cinematic moments are never editorial-cluttered.
 
-Full-stage grammar for cinematic sequences (Stage/Scene/Media Field/Action Field/Navigation Field/Safe Region/Transition Boundary, persistence, focus, keyboard/touch, mobile re-composition, reduced-motion, URL semantics) is specified in `SIGNATURE-PATTERNS.md` §16. No mode mandates scrolljacking, WebGL, or any library — simplest-technology-wins (`EXPERIENCE-DIRECTION.md` §4).
+Full-stage grammar for cinematic sequences (persistent Experience Stage, Scene/Media Field/Action Field/Navigation Field/Safe Region/Transition Boundary, progression inputs, focus, keyboard/touch, mobile re-composition, reduced-motion, direct entry, and URL semantics) is specified in `SIGNATURE-PATTERNS.md` §16 and `architecture/EXPERIENCE-RUNTIME-CONTRACT.md`. No mode mandates scrolljacking, WebGL, or any library — simplest-technology-wins (`EXPERIENCE-DIRECTION.md` §4). Native document scrolling belongs to Editorial Information Mode; it does not define cinematic Scene progression.
 
 ## 8. Treatment Signature — canonical distinction
 

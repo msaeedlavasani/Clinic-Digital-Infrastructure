@@ -40,6 +40,7 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 | `architecture/CAPABILITY-RELATIONSHIP-MODEL.md` | CANONICAL | Relationship graph; 3-axis capability state; dependency resolution |
 | `architecture/CLINIC-PROVISIONING.md` | CANONICAL | Zero-code clinic provisioning contract; derivation; completeness; replication extension |
 | `architecture/RUNTIME-ARCHITECTURE.md` | CANONICAL | Technology-neutral runtime, request resolution, rendering, failure, cache, and deployment requirements |
+| `architecture/EXPERIENCE-RUNTIME-CONTRACT.md` | CANONICAL | Persistent Stage, Scene-first progression, bounded cinematic mode, Editorial handoff, direct entry, accessibility, and enhancement/failure contract |
 | `architecture/PRODUCTION-VERTICAL-SLICE-01.md` | IMPLEMENTATION RECORD | First production-shaped clinic/locale/capability/content/rendering/lead architecture proof and its limitations |
 | `audits/ARGON-DESIGN-SYSTEM-AUDIT-01.md` | AUDIT / MIGRATION GUIDANCE | Rendered ARGON disposition map against the executable Design System and accepted runtime architecture |
 | `audits/PRODUCTION-VISUAL-RECOVERY-01.md` | AUDIT / OWNER REVIEW | Visual recovery record for the Home Hero, Treatment Discovery, and their continuous-world transition |

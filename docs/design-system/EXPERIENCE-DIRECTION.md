@@ -2,15 +2,15 @@
 
 **Class:** CANONICAL
 **Change process:** ADR or explicit rationale-documented edit.
-**Origin:** DESIGN-AMENDMENT-01 — amends the visual/art-direction principles of `DESIGN-SYSTEM-CONSTITUTION.md` §2–3 and `MOTION-ICONOGRAPHY.md` §1–4 based on Owner-reviewed visual research (PROTOTYPE-01 visually rejected; PROTOTYPE-01R research concluding in Owner-approved directional foundation). Prototype-specific palettes, geometry, imagery, or motion tokens are **not** canonicalized by this document.
+**Origin:** DESIGN-AMENDMENT-01; runtime progression clarified by EXPERIENCE-RUNTIME-CONTRACT-01 — amends the visual/art-direction principles of `DESIGN-SYSTEM-CONSTITUTION.md` §2–3 and `MOTION-ICONOGRAPHY.md` §1–4 based on Owner-reviewed visual research (PROTOTYPE-01 visually rejected; PROTOTYPE-01R research concluding in Owner-approved directional foundation). Prototype-specific palettes, geometry, imagery, or motion tokens are **not** canonicalized by this document.
 
 ---
 
 ## 1. Canonical experience direction
 
-> **Cinematic Spatial Luxury × Continuous Scroll Journey × Medical Aesthetics**
+> **Cinematic Spatial Luxury × Persistent Scene Journey × Medical Aesthetics**
 
-The premium experience must not exist only in the Hero. The Hero establishes a visual world; primary homepage sections **evolve that world** rather than abruptly replacing it with a generic website. Luxury is delivered by craft — composition, architecture, cinematography, typography, pacing, motion, materiality, detail — never by decoration (no gold gradients, glow, particle effects, glassmorphism-by-default, generic Web3/tech-demo or crypto aesthetics).
+The premium experience must not exist only in the Hero. A bounded persistent Experience Stage presents transformable Scenes inside one Clinic World; Scene progression, not document section position, defines the cinematic journey. The Stage evolves composition, media, focal placement, typography, depth, light/material, navigation, and action relationships rather than resetting into generic stacked sections. Luxury is delivered by craft — composition, cinematography, typography, pacing, motion, materiality, detail — never by decoration (no gold gradients, glow, particle effects, glassmorphism-by-default, generic Web3/tech-demo or crypto aesthetics). The technology-neutral contract is `docs/architecture/EXPERIENCE-RUNTIME-CONTRACT.md`.
 
 The earlier principle *Clinical Precision × Quiet Luxury × Human Warmth* remains valid **and is hereby interpreted dynamically**: "Quiet Luxury" is restraint in *decoration*, not passivity in *experience*. Luxury may be cinematic, bold, immersive, and visually confident while remaining medically credible and calm enough for medicine.
 
@@ -18,16 +18,20 @@ The earlier principle *Clinical Precision × Quiet Luxury × Human Warmth* remai
 
 > **Above-the-fold luxury must not collapse after the Hero.**
 
-The primary homepage journey reads as progression through **one art-directed environment**:
+The primary cinematic journey reads as progression through **one persistent art-directed environment**:
 
 ```text
-Arrival → Enter → Discover → Treatments → Technology → Expertise → Evidence → Consultation
+Entry/Home → Discovery → Treatment Entrance → Treatment Signature
+                         Stage release / handoff
+                    Information → Evidence → Doctor → Consultation
 ```
 
 - **Avoid:** Hero → hard visual reset → generic white section → card grid → unrelated section.
 - **Prefer:** staged evolution of the established world — shared surfaces, lighting logic, materiality, typographic scale relationships, and choreographed transitions between major stages.
+- Scene progression is the primitive; scroll is only one possible bounded input and document section position does not define the cinematic Scene sequence.
+- The Experience Stage is bounded and hands off to semantic Editorial Information Mode; it does not span the entire application or cinematicize information-dense content.
 - This defines **experience continuity, not implementation technology**: it does not require one continuous video, WebGL, scroll-hijacking, or any specific mechanism. Simplest-technology-wins applies (§4).
-- Continuity applies to the homepage journey contract; inner pages (treatment detail, doctors, articles) follow their own archetype contracts while remaining inside the clinic's Visual World.
+- Direct route entry, semantic content, accessibility, and browser history do not require replaying or completing cinematic Scenes. The full contract is `docs/architecture/EXPERIENCE-RUNTIME-CONTRACT.md`.
 
 ## 3. Experience DNA vs Visual World
 
@@ -62,11 +66,11 @@ Previous principle: *"Motion is precision, not entertainment."* — retained res
 
 > **Motion is part of CDI Art Direction and spatial storytelling, not decorative animation.**
 
-Motion may support: visual continuity · scene evolution · scroll choreography · depth · masking · controlled camera/crop movement · spatial transitions · typography transitions · media transformations · continuity between sections.
+Motion may support: visual continuity · Scene evolution · bounded progression inputs · depth · masking · controlled camera/crop movement · spatial transitions · typography transitions · media transformations · Stage release/handoff. Scroll can be an input, but is not the Scene primitive.
 
 Avoid as the *primary* luxury language: generic repeated fade-up / slide-up / card-entrance / arbitrary parallax. Choreographed scene transitions are preferred to repeated per-element entrances.
 
-**Constraints (unchanged in force):** `prefers-reduced-motion` delivers a coherent designed experience; no scroll-hijacking; no blocking of information access; motion must survive the accessibility contract. Implementation technology stays open — **WebGL/Three.js is not mandated**; prefer the simplest technology achieving the approved experience with acceptable performance and accessibility (`OPEN-DECISIONS.md` — motion library deferred).
+**Constraints (unchanged in force):** `prefers-reduced-motion` delivers the same Scene model and coherent designed experience; no full-page scroll hijacking or Stage trapping; no blocking of information access; motion must survive the accessibility contract. Implementation technology stays open — **WebGL/Three.js is not mandated**; prefer the simplest technology achieving the approved experience with acceptable performance and accessibility (`OPEN-DECISIONS.md` — motion library deferred).
 
 ## 5. Media / art direction
 

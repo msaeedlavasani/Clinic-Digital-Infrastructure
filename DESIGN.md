@@ -15,6 +15,7 @@ All documents below are **CANONICAL** (`docs/governance/DOCUMENT-AUTHORITY.md`).
 | Authority | Document |
 |---|---|
 | Experience direction & DNA | `docs/design-system/EXPERIENCE-DIRECTION.md` |
+| Experience runtime (persistent Stage, Scenes, and Editorial handoff) | `docs/architecture/EXPERIENCE-RUNTIME-CONTRACT.md` |
 | Experience language & layers | `docs/design-system/DESIGN-SYSTEM-CONSTITUTION.md` |
 | Visual Worlds | `docs/design-system/VISUAL-WORLDS.md` |
 | Tokens | `docs/design-system/DESIGN-TOKENS.md` |
@@ -36,7 +37,7 @@ All documents below are **CANONICAL** (`docs/governance/DOCUMENT-AUTHORITY.md`).
 
 1. This file (map + rules).
 2. `AGENT-CONTRACT.md` (§2 mandatory behavior; §6 design enforcement).
-3. The composition contract(s) for your surface (`COMPOSITION-CONTRACTS.md` §5).
+3. For cinematic/scene-based work, `EXPERIENCE-RUNTIME-CONTRACT.md` and `SIGNATURE-PATTERNS.md` §16; then the composition contract(s) for your surface (`COMPOSITION-CONTRACTS.md` §5).
 4. `DESIGN-TOKENS.md` + `COLOR-THEMING.md` (tokens/roles).
 5. `LAYOUT-RESPONSIVE.md` + `PRESENTATION-CONTEXTS.md` (geometry/contexts).
 6. `TYPOGRAPHY.md` + `BIDIRECTIONAL-RESPONSIVE-ACCESSIBILITY.md` (text/direction/a11y).
@@ -45,7 +46,7 @@ All documents below are **CANONICAL** (`docs/governance/DOCUMENT-AUTHORITY.md`).
 
 ## 3. Stable Experience DNA (never per-clinic)
 
-Cinematic · premium · spatial · art-directed · continuous · restrained · medically credible · choreographed · human + architecture + medicine + technology · mobile-aware · WCAG 2.1 AA floor. Direction: **Cinematic Spatial Luxury × Continuous Scroll Journey × Medical Aesthetics**; "Quiet Luxury" = restraint in decoration, not passivity in experience. The world persists across the whole journey — above-the-fold luxury never collapses into a generic page.
+Cinematic · premium · spatial · art-directed · continuous · restrained · medically credible · choreographed · human + architecture + medicine + technology · mobile-aware · WCAG 2.1 AA floor. Direction: **Cinematic Spatial Luxury × Persistent Scene Journey × Medical Aesthetics**; Scene progression uses a bounded persistent Experience Stage and releases to semantic Editorial Information Mode. Scroll is only one possible input, not the Scene primitive. "Quiet Luxury" = restraint in decoration, not passivity in experience. The world persists across the journey — above-the-fold luxury never collapses into a generic page.
 
 ## 4. Token usage hierarchy
 

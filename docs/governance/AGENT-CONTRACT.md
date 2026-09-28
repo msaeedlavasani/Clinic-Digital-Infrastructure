@@ -82,6 +82,20 @@ Inventing a local fix before classification violates this contract. Genuine owne
 
 For experiential or visual acceptance that requires Owner judgment, real-device Owner evidence is authoritative; an agent cannot self-certify visual acceptance. Automated checks, screenshots, DOM assertions, computed CSS, and viewport inspection can establish technical properties, but cannot independently establish premium quality, composition quality, art-direction success, perceived motion quality, or Owner acceptance. Objective engineering failures remain failures and must be resolved; Owner visual judgment does not waive engineering requirements. See `DESIGN-QA.md` §1 for the rendered-evidence rule and `prototype/argon-e01/README.md` for the current ARGON gate.
 
+### 7.1 Experience Runtime prohibition
+
+Before any cinematic UI, prototype, or Golden Path implementation, read `architecture/EXPERIENCE-RUNTIME-CONTRACT.md` and its Design System-facing grammar in `design-system/SIGNATURE-PATTERNS.md` §16.
+
+An Agent MUST NOT implement the primary cinematic journey:
+
+```text
+HOME → DISCOVERY → TREATMENT ENTRANCE
+```
+
+as vertically stacked presentation sections whose document-scroll position defines Scene progression. The canonical primitive is a bounded persistent Experience Stage that transforms between Scenes; scroll is only one possible input. The Stage must release to semantic Editorial Information Mode.
+
+If a proposed primary cinematic journey behaves as `Hero → page scroll → Discovery → page scroll → Treatment`, classify it as `EXPERIENCE_ARCHITECTURE_VIOLATION`. Do not patch its styling or continue visual refinement. Stop and correct the runtime/presentation model, unless a later canonical decision explicitly changes the Experience Runtime Contract. This prohibition does not ban ordinary semantic document flow in Editorial Information Mode.
+
 ## 8. Project decision persistence
 
 Important CDI decisions and context must not remain solely in conversational history. When Owner or workstream decisions materially change product scope, architecture, Design System, business assumptions, governance, experience direction, roadmap, or acceptance criteria, the responsible workstream must persist the result in repository documentation before that workstream is considered closed. Casual conversation does not need to be recorded.

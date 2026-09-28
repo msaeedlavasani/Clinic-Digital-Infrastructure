@@ -125,14 +125,15 @@ Behavior (not implementation), respecting open decisions:
 - **Consultation CTA restraint:** education-first; contextual consultation links only — no interstitials, no forced mid-article CTAs; publication dates honest (`SEO-FOUNDATION.md` §3).
 - Translation states apply: only `PUBLISHED` localized representations exist (A-6).
 
-## 16. Full-stage experience grammar (added DESIGN-SYSTEM-VNEXT-01)
+## 16. Full-stage experience grammar (runtime contract alignment)
 
-Cinematic and continuous-scroll experiences compose scenes from a shared spatial grammar. `COMPOSITION-CONTRACTS.md` §2 is the composition authority for a single stage; this section defines how stages/sequences behave over time:
+Cinematic experiences use a bounded persistent Experience Stage containing transformable Scenes. Scene progression is the primitive; scroll is one possible input and document section position does not define the Scene sequence. `COMPOSITION-CONTRACTS.md` §2 remains the geometry authority for the visual rails/zones within a composition; this section describes the Design System-facing spatial vocabulary. The complete runtime model is canonicalized in `docs/architecture/EXPERIENCE-RUNTIME-CONTRACT.md`.
 
 | Concept | Definition |
 |---|---|
-| **Stage** | one full-viewport composition unit — the rails/zones model (`COMPOSITION-CONTRACTS.md` §2) instantiated |
-| **Scene** | a semantic unit of the journey; may occupy a stage or a scroll region; the unit of route/URL meaning |
+| **Experience Stage** | bounded persistent presentation surface that hosts a sequence of Scenes and owns continuity; released at the Editorial Information handoff |
+| **Composition stage** | one spatial composition unit — the rails/zones model (`COMPOSITION-CONTRACTS.md` §2) instantiated within the Experience Stage or an editorial composition; not itself a runtime sequence |
+| **Scene** | a presentation/runtime state with semantic purpose, content representation, composition, media, action/navigation, transitions, accessibility, and direct-entry behavior; distinct from Route and Entity identity |
 | **Scene Content Region** | region holding the scene's primary content/text (Content Rail authority) |
 | **Media Field** | region for the scene's media, subject to the media composition contract (`PHOTOGRAPHY.md` §2A) |
 | **Action Field** | the scene's Action Zone instance (`COMPOSITION-CONTRACTS.md` §4) |
@@ -140,14 +141,16 @@ Cinematic and continuous-scroll experiences compose scenes from a shared spatial
 | **Safe Region** | applicable safe-area exclusion respected by content/actions (`PRESENTATION-CONTEXTS.md` §4) |
 | **Transition Boundary** | the defined semantic/spatial edge at which one scene ends and the next begins |
 
-- **Persistence vs reset:** global navigation, skip link, locale switcher, and persistent trust/context elements may persist across scenes; scene-specific content, media, and actions reset per scene. Persistent chrome never overlaps a scene's focal subject or Action Field.
-- **Focus:** on scene advancement, keyboard focus moves to the new scene's primary landmark (or is retained when advancement is plain scroll); focus is never lost or trapped.
-- **Keyboard/touch:** scenes remain navigable by both. Scroll/touch advancement is the default; a keyboard path exists wherever advancement is interaction-gated.
-- **Accessibility:** all scene content exists in the accessibility tree regardless of motion state; reduced motion replaces transitions per `MOTION-ICONOGRAPHY.md` §3A without removing or hiding content.
+- **Continuity:** the Experience Stage may preserve world/media/material context as Scenes transform. Scene-specific content/actions may change; persistent navigation/context must not obscure focal/action regions.
+- **Focus:** explicit Scene navigation has a predictable focus destination; passive input may retain focus where moving it would disrupt interaction. Focus is never lost or trapped.
+- **Input:** wheel, trackpad, touch, keyboard, explicit action, and direct route entry are possible inputs. No input is mandatory; scroll/touch are not architectural defaults. Do not hijack document behavior outside the bounded Stage.
+- **Accessibility:** the active Scene has coherent semantic order; inactive visual Scenes do not create duplicate reading order or focus targets. Reduced motion preserves the same model, content, controls, and hierarchy while simplifying transitions.
 - **Mobile re-composition:** a scene re-composes per `LAYOUT-RESPONSIVE.md` §1 — rails/zones re-express per context; the grammar is never desktop-scene shrinking.
-- **URL semantics:** routes/URLs are independent of visual scene transitions. A scene is addressable when it carries route meaning; the visual transition is presentational and must never be load-bearing for content access.
+- **URL semantics:** routes/URLs and stable entity identities are independent of visual Scene transitions. Meaningful direct entry initializes an appropriate Scene/context without replaying earlier Scenes; animation frames do not become browser-history entries. The visual transition is never load-bearing for content access.
+- **Editorial handoff:** after the bounded cinematic sequence, release the Stage into semantic Editorial Information Mode. Information, evidence, doctor, and consultation behavior uses the semantic document and native document scrolling while preserving the Clinic World and resolved context.
+- **Progressive enhancement:** without cinematic enhancement, semantic links/routes keep Home intent, discovery, treatment, actions, and information accessible. Enhancement failure is enhancement-only when semantic content remains.
 - **Technology-neutral:** no implementation technology is prescribed (`EXPERIENCE-DIRECTION.md` §4).
-- Prototypes and implementations must not invent fixed-position scene geometry outside this grammar without an admitted experimental exception (`AGENT-CONTRACT.md` §6).
+- Prototypes and implementations must not invent fixed-position scene geometry outside this grammar without an admitted experimental exception (`AGENT-CONTRACT.md` §6). Implementing the primary cinematic journey as vertically stacked document sections is an `EXPERIENCE_ARCHITECTURE_VIOLATION` under `AGENT-CONTRACT.md` §7.1.
 
 ## 17. Navigation + progress existence rule (added DESIGN-SYSTEM-VNEXT-01)
 

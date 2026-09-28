@@ -26,7 +26,7 @@ CDI's experience language is:
 
 All three qualities must coexist; optimizing one into caricature (cold precision, luxury emptiness, cozy clutter) is a design defect.
 
-> **Amended (DESIGN-AMENDMENT-01):** the canonical experience direction is now **Cinematic Spatial Luxury × Continuous Scroll Journey × Medical Aesthetics** (`EXPERIENCE-DIRECTION.md`) — "Quiet Luxury" is restraint in decoration, not passivity in experience. The homepage is a continuous art-directed journey; visual worlds are clinic-selectable (`VISUAL-WORLDS.md`).
+> **Amended (DESIGN-AMENDMENT-01; EXPERIENCE-RUNTIME-CONTRACT-01 clarifies progression):** the canonical experience direction is **Cinematic Spatial Luxury × Persistent Scene Journey × Medical Aesthetics** (`EXPERIENCE-DIRECTION.md`). Cinematic Scene progression is hosted by a bounded persistent Experience Stage; document scroll is only a possible input, not the Scene primitive. The Stage hands off to semantic Editorial Information Mode. "Quiet Luxury" is restraint in decoration, not passivity in experience; Visual Worlds are clinic-selectable (`VISUAL-WORLDS.md`).
 
 ## 3. Anti-aesthetic rules (anti-patterns, not absolute bans)
 
