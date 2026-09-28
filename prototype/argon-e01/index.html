@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fa-IR" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#242321">
+  <meta name="description" content="ARGON — تجربه‌ی نمایشی کلینیک پوست، مو و زیبایی.">
+  <title>ARGON — کلینیک پوست، مو و زیبایی</title>
+  <link rel="icon" href="data:,">
+  <link rel="preload" as="font" href="assets/fonts/Vazirmatn-variable.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/desire-portrait.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/demo-doctor.jpg">
+  <link rel="preload" as="image" href="assets/demo-clinic-technology.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="material.js" defer></script>
+  <script src="experience.js" defer></script>
+</head>
+<body class="presentation-mode" data-locale="fa">
+  <main class="world" id="world" aria-label="تجربه‌ی کلینیک زیبایی آرگون">
+    <canvas class="material-canvas" id="material-canvas" aria-hidden="true"></canvas>
+    <div class="world__image world__image--portrait" aria-hidden="true"><img src="assets/desire-portrait.webp" alt="" fetchpriority="high"></div>
+    <div class="world__image world__image--skin" id="skin-material" aria-hidden="true"><img src="assets/renewal-material.webp" alt="" loading="eager"></div>
+    <div class="world__grain" aria-hidden="true"></div>
+    <div class="world__shade" aria-hidden="true"></div>
+    <div class="world__focus-plane" aria-hidden="true"></div>
+    <div class="world__editorial-wash" aria-hidden="true"></div>
+
+    <header class="masthead">
+      <button class="wordmark" type="button" aria-label="ARGON — آغاز" id="home-reset">ARGON</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="بخش‌های اصلی">
+        <button type="button" data-go="treatments" data-copy="navTreatments">خدمات</button>
+        <button type="button" data-go="doctor" data-copy="navDoctor">پزشکان</button>
+        <button type="button" data-go="technology" data-copy="navTechnology">تکنولوژی</button>
+        <button type="button" data-go="consultation" data-copy="navConsultation">مشاوره</button>
+      </nav>
+      <div class="header-actions">
+        <div class="locale-switch" role="group" aria-label="زبان / Language">
+          <button type="button" data-locale-choice="fa" aria-pressed="true">FA</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-locale-choice="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="scene-copy scene-copy--hero" aria-label="معرفی کلینیک">
+      <p class="eyebrow" data-copy="heroEyebrow">کلینیک پوست، مو و زیبایی آرگون</p>
+      <h1 data-copy="heroTitle">زیبایی، با دقت بیشتر.</h1>
+      <p class="scene-copy__note" data-copy="heroNote">پزشکی، فناوری و نگاهی شخصی به مراقبت از زیبایی.</p>
+      <div class="hero-actions">
+        <button class="text-action text-action--primary" id="hero-next" type="button"><span data-copy="heroServices">مشاهده خدمات</span><span class="action-arrow" aria-hidden="true">←</span></button>
+        <button class="text-action" type="button" data-go="consultation"><span data-copy="heroConsultation">درخواست مشاوره</span><span class="action-arrow" aria-hidden="true">←</span></button>
+      </div>
+    </section>
+
+    <section class="scene-copy scene-copy--laser" aria-label="تجربه‌ی لیزر">
+      <p class="eyebrow" data-copy="laserEyebrow">تجربه‌ی لیزر</p>
+      <h2 data-copy="laserTitle">لیزر موهای زائد</h2>
+      <p class="scene-copy__note" data-copy="laserNote">نور متمرکز، با حرکتی دقیق و کنترل‌شده.</p>
+      <button class="text-action laser-next" type="button" data-go="laserDetail"><span data-copy="laserDetailAction">ادامه به اطلاعات درمان</span><span class="action-arrow" aria-hidden="true">←</span></button>
+    </section>
+
+    <div class="editorial-scenes" id="editorial-scenes">
+      <section class="editorial-scene editorial-scene--treatments" data-editorial="treatments" aria-label="کشف خدمات" aria-hidden="true">
+        <div class="editorial-content treatments-layout">
+          <div class="editorial-copy">
+            <p class="eyebrow" data-copy="treatmentsEyebrow">خدمات</p>
+            <h2 class="editorial-title" id="treatment-title">لیزر موهای زائد</h2>
+            <p class="editorial-note" id="treatment-note">رویکردی سنجیده به نور و دقت.</p>
+            <p class="sr-only" id="treatment-message" aria-live="polite"></p>
+          </div>
+          <div class="treatment-rail" role="group" aria-label="انتخاب خدمت">
+            <button class="treatment-option is-active" type="button" data-treatment-id="laser" aria-pressed="true"><span>۰۱</span><b>لیزر موهای زائد</b></button>
+            <button class="treatment-option" type="button" data-treatment-id="botox" aria-pressed="false"><span>۰۲</span><b>بوتاکس</b></button>
+            <button class="treatment-option" type="button" data-treatment-id="filler" aria-pressed="false"><span>۰۳</span><b>فیلر</b></button>
+            <button class="treatment-option" type="button" data-treatment-id="rejuvenation" aria-pressed="false"><span>۰۴</span><b>جوانسازی پوست</b></button>
+            <button class="treatment-option" type="button" data-treatment-id="hair" aria-pressed="false"><span>۰۵</span><b>کاشت / ترمیم مو</b></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-scene editorial-scene--laser-detail" data-editorial="laserDetail" aria-label="اطلاعات لیزر موهای زائد" aria-hidden="true">
+        <div class="editorial-content laser-detail-layout">
+          <div class="laser-detail-main">
+            <p class="eyebrow" data-copy="laserDetailEyebrow">اطلاعات درمان <span>—</span> لیزر</p>
+            <h2 class="editorial-title" data-copy="laserDetailTitle">لیزر موهای زائد</h2>
+            <p class="editorial-note laser-detail-intro" data-copy="laserDetailIntro">انتخاب روش و برنامه‌ی درمان پس از مشاوره و ارزیابی فردی انجام می‌شود. این اطلاعات نمایشی است و جایگزین نظر پزشک نیست.</p>
+            <div class="treatment-facts" aria-label="اطلاعات کلی درمان">
+              <div class="fact"><span data-copy="factDuration">مدت جلسه</span><b data-copy="factDurationValue">وابسته به ناحیه</b></div>
+              <div class="fact"><span data-copy="factSessions">تعداد جلسات</span><b data-copy="factSessionsValue">پس از ارزیابی مشخص می‌شود</b></div>
+              <div class="fact"><span data-copy="factDowntime">دوره‌ی نقاهت</span><b data-copy="factDowntimeValue">در مشاوره بررسی می‌شود</b></div>
+              <div class="fact"><span data-copy="factArea">ناحیه‌ی درمان</span><b data-copy="factAreaValue">بر اساس نیاز فرد</b></div>
+            </div>
+            <div class="detail-links">
+              <button class="text-action" type="button" data-go="doctor"><span data-copy="meetDoctor">آشنایی با پزشک</span><span class="action-arrow" aria-hidden="true">←</span></button>
+              <button class="text-action" type="button" data-go="technology"><span data-copy="seeTechnology">فناوری و محیط</span><span class="action-arrow" aria-hidden="true">←</span></button>
+            </div>
+            <button class="consultation-cta" type="button" data-go="consultation"><span data-copy="requestConsultation">درخواست مشاوره</span><span aria-hidden="true">←</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-scene editorial-scene--doctor" data-editorial="doctor" aria-label="پزشک و تخصص" aria-hidden="true">
+        <div class="editorial-content doctor-layout">
+          <div class="editorial-copy doctor-copy">
+            <p class="eyebrow" data-copy="doctorEyebrow">پزشک و تخصص</p>
+            <p class="editorial-kicker" data-copy="doctorKicker">مراقبت، با گفت‌وگو آغاز می‌شود.</p>
+            <h2 class="editorial-title" data-copy="doctorName">دکتر ن. رحیمی</h2>
+            <p class="editorial-note" data-copy="doctorSpecialty">پوست و پزشکی زیبایی</p>
+            <p class="doctor-credibility" data-copy="doctorLine">ارزیابی و گفت‌وگو، بخشی از مسیر انتخاب درمان است.</p>
+            <p class="demo-disclosure" data-copy="demoDoctor">اطلاعات این نسخه صرفاً جهت نمایش دمو است.</p>
+            <button class="text-action scene-continue" type="button" data-go="technology"><span data-copy="doctorNext">آشنایی با فناوری و محیط</span><span class="action-arrow" aria-hidden="true">←</span></button>
+          </div>
+          <figure class="doctor-portrait"><img src="assets/demo-doctor.jpg" alt="تصویر نمایشی پزشک برای معرفی تجربه‌ی آرگون" loading="eager"></figure>
+        </div>
+      </section>
+
+      <section class="editorial-scene editorial-scene--technology" data-editorial="technology" aria-label="فناوری و محیط کلینیک" aria-hidden="true">
+        <div class="technology-image" aria-hidden="true"><img src="assets/demo-clinic-technology.jpg" alt="" loading="eager"></div>
+        <div class="editorial-content technology-layout">
+          <div class="editorial-copy">
+            <p class="eyebrow" data-copy="technologyEyebrow">فناوری و محیط</p>
+            <h2 class="editorial-title" data-copy="technologyTitle">دقت، در محیطی آرام.</h2>
+            <p class="editorial-note" data-copy="technologyNote">تجهیزات، فضا و تجربه‌ی مراقبت در کنار هم روایت می‌شوند.</p>
+            <p class="demo-disclosure" data-copy="demoTechnology">تصویر و تجهیزات، نمایشی‌اند و به مدل مشخصی اشاره ندارند.</p>
+            <button class="text-action scene-continue" type="button" data-go="consultation"><span data-copy="technologyNext">درخواست مشاوره</span><span class="action-arrow" aria-hidden="true">←</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-scene editorial-scene--consultation" data-editorial="consultation" aria-label="درخواست مشاوره" aria-hidden="true">
+        <div class="editorial-content consultation-layout">
+          <div class="editorial-copy consultation-copy">
+            <p class="eyebrow" data-copy="consultationEyebrow">مشاوره</p>
+            <h2 class="editorial-title" data-copy="consultationTitle">گفت‌وگو را آغاز کنید.</h2>
+            <p class="editorial-note" data-copy="consultationNote">برای آشنایی با مسیر درمان، درخواست خود را در این فرم نمایشی وارد کنید.</p>
+            <form class="consultation-form" id="consult-form">
+              <label><span data-copy="nameLabel">نام</span><input name="name" autocomplete="name" placeholder="نام و نام خانوادگی" required></label>
+              <label><span data-copy="phoneLabel">شماره تماس</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="شماره تماس" required dir="auto"></label>
+              <label><span data-copy="serviceLabel">خدمت مورد نظر</span><select name="service" id="consult-service"><option value="" selected disabled hidden>انتخاب خدمت</option><option value="laser">لیزر موهای زائد</option><option value="botox">بوتاکس</option><option value="filler">فیلر</option><option value="rejuvenation">جوانسازی پوست</option><option value="hair">کاشت / ترمیم مو</option><option value="other">سایر</option></select></label>
+              <button class="consultation-cta" type="submit"><span data-copy="submitConsult">ثبت درخواست مشاوره</span><span aria-hidden="true">←</span></button>
+              <p class="form-status" id="form-status" aria-live="polite" data-copy="localOnly">نسخه‌ی نمایشی — اطلاعات ارسال یا ذخیره نمی‌شود.</p>
+            </form>
+            <div class="consultation-contact"><span data-copy="contactLabel">راه‌های تماس نمایشی:</span><a href="tel:+982100000000" dir="ltr" data-copy="phoneDemo">+۹۸ ۲۱ ۰۰۰۰ ۰۰۰۰</a><span aria-hidden="true">·</span><a href="https://wa.me/982100000000" target="_blank" rel="noreferrer" data-copy="whatsapp">واتساپ</a></div>
+          </div>
+          <p class="consultation-signoff">ARGON<br><span data-copy="signoff">تجربه‌ای سنجیده‌تر.</span></p>
+        </div>
+      </section>
+    </div>
+
+    <div class="sr-only" id="state-announcement" aria-live="polite" aria-atomic="true">معرفی کلینیک</div>
+  </main>
+</body>
+</html>
