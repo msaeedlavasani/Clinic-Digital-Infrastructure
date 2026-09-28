@@ -1,0 +1,28 @@
+{
+  "states": [
+    "treatments",
+    "laser-event",
+    "laserDetail",
+    "doctor",
+    "technology",
+    "consultation"
+  ],
+  "focusAfter": {
+    "tag": "BUTTON",
+    "label": "ادامه به اطلاعات درمان←",
+    "insideHidden": true
+  },
+  "urlAfter": "http://127.0.0.1:4178/",
+  "locale": {
+    "lang": "en",
+    "dir": "ltr",
+    "scene": "consultation",
+    "url": "http://127.0.0.1:4178/"
+  },
+  "reset": {
+    "scene": "hero",
+    "url": "http://127.0.0.1:4178/?lang=en",
+    "scrollY": 0
+  },
+  "errors": []
+}

@@ -1,0 +1,13 @@
+{
+  "viewport": "390x844",
+  "locale": "fa-IR",
+  "dir": "rtl",
+  "state": "laser-event",
+  "preference": true,
+  "bodyOverride": false,
+  "transitionDuration": "1e-05s",
+  "focusOpacity": "0.85",
+  "canvasProgress": "0.340",
+  "contentPresent": true,
+  "errors": []
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "state": "hero",
+    "violations": [],
+    "passes": 29,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "state": "treatments",
+    "violations": [],
+    "passes": 29,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "state": "laser-event&event=50",
+    "violations": [],
+    "passes": 28,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "state": "laserDetail",
+    "violations": [],
+    "passes": 29,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ]
+  },
+  {
+    "state": "doctor",
+    "violations": [],
+    "passes": 31,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "state": "technology",
+    "violations": [],
+    "passes": 28,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "state": "consultation",
+    "violations": [],
+    "passes": 35,
+    "incomplete": [
+      "color-contrast"
+    ]
+  }
+]

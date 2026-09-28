@@ -40,6 +40,7 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 | `architecture/CAPABILITY-RELATIONSHIP-MODEL.md` | CANONICAL | Relationship graph; 3-axis capability state; dependency resolution |
 | `architecture/CLINIC-PROVISIONING.md` | CANONICAL | Zero-code clinic provisioning contract; derivation; completeness; replication extension |
 | `architecture/RUNTIME-ARCHITECTURE.md` | CANONICAL | Technology-neutral runtime, request resolution, rendering, failure, cache, and deployment requirements |
+| `audits/ARGON-DESIGN-SYSTEM-AUDIT-01.md` | AUDIT / MIGRATION GUIDANCE | Rendered ARGON disposition map against the executable Design System and accepted runtime architecture |
 | `architecture/FRAMEWORK-EVALUATION-CRITERIA.md` | CANONICAL INPUT TO ADR | Priority and risk dimensions plus required comparison record for ADR-0001; no candidates scored |
 | `decisions/ADR-0001-APPLICATION-FRAMEWORK-AND-RENDERING.md` | CANONICAL (Accepted ADR) | Selects Next.js App Router and CDI's request-resolved hybrid rendering model |
 | `architecture/REPLICATION-CONTRACT.md` | CANONICAL | Fork-free replication, change classification, Replication Gate, Controlled Variation |
