@@ -129,7 +129,7 @@ The base experience may use the selected framework's server, build, or client ca
 
 **CINEMATIC MODE** may justify richer client/runtime enhancement for heroes, discovery moments, treatment entrances/signatures, selected transitions, and immersive storytelling. **EDITORIAL MODE** minimizes unnecessary runtime cost and preserves complete semantic rendering for treatment facts, risks, FAQ, evidence, doctor credentials, Before/After, long-form education, and forms. A route or page may move between both modes within one application and route system; Visual World continuity persists across the boundary.
 
-The future `/design-system` validation harness must be hostable within the selected application architecture and use the same production Design System primitives/components and token/contract source, not a disconnected documentation implementation. Harness implementation remains deferred and A-1 remains open.
+The future `/design-system` validation harness must be hostable within the selected application architecture and use the same production Design System primitives/components and token/contract source, not a disconnected documentation implementation. Harness implementation remains deferred. Application framework/rendering A-1 is resolved by [ADR-0001](../decisions/ADR-0001-APPLICATION-FRAMEWORK-AND-RENDERING.md); this requirement did not select a framework by itself.
 
 ## 11. Client execution boundary
 
@@ -231,7 +231,6 @@ The runtime supports the existing Replication Proof. Clinic #2 should be launcha
 
 ## 23. Framework neutrality and authority
 
-This document specifies required properties, not SSR/SSG/ISR/CSR as universal answers and not a framework, CMS, database, tenancy model, hosting provider, CDN, analytics vendor, search implementation, lead vendor, animation library, or GPU technology. ADR-0001 evaluates implementation candidates against this contract and `FRAMEWORK-EVALUATION-CRITERIA.md`.
+This document specifies required properties, not SSR/SSG/ISR/CSR as universal answers and not a framework, CMS, database, tenancy model, hosting provider, CDN, analytics vendor, search implementation, lead vendor, animation library, or GPU technology. ADR-0001 records the selected application framework and rendering model against this contract and `FRAMEWORK-EVALUATION-CRITERIA.md`.
 
 The runtime must not expand V1 into CRM, booking, patient accounts, treatment simulation, scrolljacking, a full-client-rendering mandate, persistence architecture, or ARGON promotion. ARGON remains experimental/non-canonical evidence only for rich transitions, interactive regions, sensory effects, responsive recomposition, and reduced-motion equivalents.
-

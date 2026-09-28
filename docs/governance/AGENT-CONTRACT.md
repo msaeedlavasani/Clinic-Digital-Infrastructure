@@ -14,7 +14,7 @@ AI coding agents (and any contributor) performing implementation work on CDI are
 Every implementation agent must:
 
 1. **Read canonical governance before implementation** — at minimum `/docs/README.md`, `PRODUCT-CONSTITUTION.md`, `V1-SCOPE.md`, and `AGENT-CONTRACT.md` (this document), plus domain documents relevant to the task — for UI/design-affecting work this starts at `/DESIGN.md`, the operational design-system front door — (localization work must also read `LOCALIZATION-FOUNDATION.md` and `BIDIRECTIONAL-RESPONSIVE-ACCESSIBILITY.md`).
-   - **Application/runtime implementation must also read `architecture/RUNTIME-ARCHITECTURE.md` and `architecture/FRAMEWORK-EVALUATION-CRITERIA.md` before implementation.** These documents constrain runtime properties; they do not select a framework or vendor.
+   - **Application/runtime implementation must also read `architecture/RUNTIME-ARCHITECTURE.md`, `architecture/FRAMEWORK-EVALUATION-CRITERIA.md`, and the applicable accepted application ADR (currently `decisions/ADR-0001-APPLICATION-FRAMEWORK-AND-RENDERING.md`) before implementation.**
 2. **Identify affected contracts** before changing code or schemas; name them in the plan or commit/PR description.
 3. **Not silently override canonical decisions.** If a task seems to require contradicting a canonical document, that is a conflict, not permission.
 4. **Distinguish requirement from assumption.** Requirements trace to canonical documents or the task; everything else is an assumption and must be labeled as such.

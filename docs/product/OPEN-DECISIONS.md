@@ -72,12 +72,11 @@ Each entry records: **question**, **why it matters**, **latest responsible decis
 
 ### ARCHITECTURE class
 
-**A-1. Framework / rendering model**
-- Question: Which web framework and rendering approach (SSR/SSG/ISR/hybrid) for clinic sites?
-- Why: Defines repo structure, hosting constraints, and SEO/Perf trade-offs.
-- Latest responsible point: First implementation ADR.
-- Default: None chosen; SEO + performance + multilingual routing requirements constrain the choice.
-- Blocks: Blocks all website implementation until decided.
+**A-1. RESOLVED — Application framework and rendering model** (`docs/decisions/ADR-0001-APPLICATION-FRAMEWORK-AND-RENDERING.md`, Accepted 2026-09-28)
+- Original question: Which web framework and rendering approach (SSR/SSG/ISR/hybrid) for clinic sites?
+- Rationale: Defines repo structure, hosting constraints, and SEO/performance trade-offs.
+- Decision: Next.js App Router; request-resolved hybrid rendering with server-rendered semantic output, selective safe cache/pre-render reuse, and narrowly scoped client enhancement. The ADR decides framework and rendering model separately.
+- Blocks: Resolved for application architecture; adjacent CMS, persistence, tenancy/deployment topology, and hosting decisions remain open.
 
 **A-2. CMS / content source**
 - Question: Headless CMS vs. structured files vs. database-first?

@@ -41,6 +41,7 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 | `architecture/CLINIC-PROVISIONING.md` | CANONICAL | Zero-code clinic provisioning contract; derivation; completeness; replication extension |
 | `architecture/RUNTIME-ARCHITECTURE.md` | CANONICAL | Technology-neutral runtime, request resolution, rendering, failure, cache, and deployment requirements |
 | `architecture/FRAMEWORK-EVALUATION-CRITERIA.md` | CANONICAL INPUT TO ADR | Priority and risk dimensions plus required comparison record for ADR-0001; no candidates scored |
+| `decisions/ADR-0001-APPLICATION-FRAMEWORK-AND-RENDERING.md` | CANONICAL (Accepted ADR) | Selects Next.js App Router and CDI's request-resolved hybrid rendering model |
 | `architecture/REPLICATION-CONTRACT.md` | CANONICAL | Fork-free replication, change classification, Replication Gate, Controlled Variation |
 | `architecture/LOCALIZATION-FOUNDATION.md` | CANONICAL | Multilingual/bidirectional foundation: locales, localizations, fallback, routing |
 | `architecture/INTEGRATION-BOUNDARIES.md` | CANONICAL | Conceptual boundaries for external systems |
@@ -70,6 +71,7 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 | `engineering/PERFORMANCE-PRINCIPLES.md` | CANONICAL | Performance as a product property |
 | `engineering/PRIVACY-SECURITY-FOUNDATION.md` | CANONICAL | Baseline privacy/security principles |
 | `decisions/README.md` | CANONICAL (mechanism) | ADR mechanism and triggers |
+| `decisions/ADR-0001-APPLICATION-FRAMEWORK-AND-RENDERING.md` | CANONICAL (Accepted ADR) | Application framework, rendering model, framework boundary, and consequences |
 | `decisions/ADR-TEMPLATE.md` | Template | Copy for new ADRs |
 
 ## Ownership / change process
@@ -81,4 +83,4 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 
 ## Founding context
 
-This documentation set is the output of **CDI FOUNDATION-00** (including the multilingual/bidirectional steering delta), **CDI DESIGN-01** (design-system specification), the **FOUNDATION EXTENSION** (SERVICE-CATALOG-01 + CLINIC-PROVISIONING-01 + DESIGN-AMENDMENT-01: Master Service Catalog, zero-code provisioning, experience-direction amendment, Visual Worlds, PROTOTYPE-02 gate), and **DESIGN-SYSTEM-VNEXT-01** (canonicalization of the operational design layer: presentation contexts, composition contracts, semantic spacing, media/action/navigation contracts, Design QA rule IDs, agent design enforcement, `/DESIGN.md`, validation-harness spec). All stages are documentation/design-only; no implementation exists yet. The first ADRs (framework, CMS, persistence, tenancy) are deliberately unmade — see `decisions/README.md` §4. Prototype status: PROTOTYPE-01 and PROTOTYPE-01R were **visually rejected** (their research informed `EXPERIENCE-DIRECTION.md`; no prototype-specific values are canonical).
+This documentation set is the output of **CDI FOUNDATION-00** (including the multilingual/bidirectional steering delta), **CDI DESIGN-01** (design-system specification), the **FOUNDATION EXTENSION** (SERVICE-CATALOG-01 + CLINIC-PROVISIONING-01 + DESIGN-AMENDMENT-01: Master Service Catalog, zero-code provisioning, experience-direction amendment, Visual Worlds, PROTOTYPE-02 gate), **DESIGN-SYSTEM-VNEXT-01** (canonicalization of the operational design layer), **CDI-RUNTIME-ARCHITECTURE-01**, and **CDI-ADR-0001**. These stages are documentation/design-only; no application implementation is authorized by them. ADR-0001 selects the application framework and rendering model; CMS, persistence, and tenancy remain open. Prototype status: PROTOTYPE-01 and PROTOTYPE-01R were **visually rejected** (their research informed `EXPERIENCE-DIRECTION.md`; no prototype-specific values are canonical).

@@ -37,4 +37,4 @@ Decisions that merely *add clinic configuration or content* never require an ADR
 
 ## 4. Current state
 
-**No ADRs exist yet.** FOUNDATION-00 deliberately made none of the §2 decisions; they await real evaluation. The register of what is unresolved lives in `docs/product/OPEN-DECISIONS.md`.
+**ADR-0001 is Accepted** and resolves application framework/rendering model A-1. CMS, tenant architecture, deployment topology, domain strategy, persistence, and other decisions in §2 remain unresolved unless their register entries point to an accepted ADR. The register of unresolved decisions lives in `docs/product/OPEN-DECISIONS.md`.
