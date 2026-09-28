@@ -76,3 +76,13 @@ Before inventing a local fix, the agent classifies the need:
 | `EXPERIMENTAL_EXCEPTION` | a deliberate, bounded experiment | label explicitly, keep outside Core, never canonical by default |
 
 Inventing a local fix before classification violates this contract. Genuine owner-level conflicts route through §3 (stop-and-escalate).
+
+## 7. Experiential and visual acceptance
+
+For experiential or visual acceptance that requires Owner judgment, real-device Owner evidence is authoritative; an agent cannot self-certify visual acceptance. Automated checks, screenshots, DOM assertions, computed CSS, and viewport inspection can establish technical properties, but cannot independently establish premium quality, composition quality, art-direction success, perceived motion quality, or Owner acceptance. Objective engineering failures remain failures and must be resolved; Owner visual judgment does not waive engineering requirements. See `DESIGN-QA.md` §1 for the rendered-evidence rule and `prototype/argon-e01/README.md` for the current ARGON gate.
+
+## 8. Project decision persistence
+
+Important CDI decisions and context must not remain solely in conversational history. When Owner or workstream decisions materially change product scope, architecture, Design System, business assumptions, governance, experience direction, roadmap, or acceptance criteria, the responsible workstream must persist the result in repository documentation before that workstream is considered closed. Casual conversation does not need to be recorded.
+
+Conversation memory is context, not project authority. Repository documentation is project authority. Preserve consequential decision provenance—status, rationale, relevant rejected/superseded alternatives, canonical authority, and unresolved dependencies—in the appropriate canonical document, decision register, recovery ledger, or ADR. Do not turn canonical contracts into chronological diaries; use `DECISION-RECOVERY-LEDGER.md` and `decisions/README.md` for lineage and ADR process.

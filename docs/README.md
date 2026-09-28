@@ -27,6 +27,7 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 | `governance/PRODUCT-CONSTITUTION.md` | CANONICAL | What CDI is: identity, users, principles, anti-goals |
 | `governance/ENGINEERING-GOVERNANCE.md` | CANONICAL | Engineering principles, Definition of Done |
 | `governance/AGENT-CONTRACT.md` | CANONICAL | Binding rules for AI implementation agents |
+| `governance/DECISION-RECOVERY-LEDGER.md` | GUIDANCE / DECISION LINEAGE | Recovered project context, decision provenance, rejected directions, experimental evidence, and promotion status; canonical contracts remain authoritative |
 | `product/V1-SCOPE.md` | CANONICAL | What V1 includes/excludes; V1 done-criteria |
 | `product/PRODUCT-ROADMAP.md` | GUIDANCE | Future phases (directional, non-binding) |
 | `product/OPEN-DECISIONS.md` | CANONICAL (register) | All unresolved decisions, classified |
