@@ -39,6 +39,8 @@ Agents: additionally obey `docs/governance/AGENT-CONTRACT.md` before any impleme
 | `architecture/MASTER-SERVICE-CATALOG.md` | CANONICAL | Service/treatment/concern ontology; 11 families; taxonomy rules; ownership |
 | `architecture/CAPABILITY-RELATIONSHIP-MODEL.md` | CANONICAL | Relationship graph; 3-axis capability state; dependency resolution |
 | `architecture/CLINIC-PROVISIONING.md` | CANONICAL | Zero-code clinic provisioning contract; derivation; completeness; replication extension |
+| `architecture/RUNTIME-ARCHITECTURE.md` | CANONICAL | Technology-neutral runtime, request resolution, rendering, failure, cache, and deployment requirements |
+| `architecture/FRAMEWORK-EVALUATION-CRITERIA.md` | CANONICAL INPUT TO ADR | Priority and risk dimensions plus required comparison record for ADR-0001; no candidates scored |
 | `architecture/REPLICATION-CONTRACT.md` | CANONICAL | Fork-free replication, change classification, Replication Gate, Controlled Variation |
 | `architecture/LOCALIZATION-FOUNDATION.md` | CANONICAL | Multilingual/bidirectional foundation: locales, localizations, fallback, routing |
 | `architecture/INTEGRATION-BOUNDARIES.md` | CANONICAL | Conceptual boundaries for external systems |
