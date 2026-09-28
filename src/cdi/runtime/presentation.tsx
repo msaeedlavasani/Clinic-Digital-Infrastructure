@@ -11,10 +11,12 @@ export function ProductionHeader({
   clinic,
   locale,
   alternateHref,
+  immersive = false,
 }: {
   clinic: ClinicContext;
   locale: RouteLocale;
   alternateHref?: string;
+  immersive?: boolean;
 }) {
   const text = labels[locale];
   const homeHref = `/${locale}`;
@@ -22,7 +24,7 @@ export function ProductionHeader({
   const alternate = locale === "fa" ? "en" : "fa";
   const localeName = locale === "fa" ? "English" : "فارسی";
   return (
-    <div className="cdi-production-header">
+    <div className={`cdi-production-header${immersive ? " cdi-production-header--immersive" : ""}`}>
       <SiteHeader
         brand={<><span className="navigation-brand__mark" aria-hidden="true">{clinic.brand.mark}</span><span>{clinic.brand.name}</span></>}
         brandHref={`${homeHref}#top`}

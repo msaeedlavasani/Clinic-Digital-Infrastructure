@@ -53,3 +53,11 @@ The captured production Home requested one critical Hero illustration as `eager`
 The fake clinic and its content are architecture fixtures, not medical copy or clinic assets. Performance observations describe the local production build only, not a deployment budget. Browser viewport emulation does not verify a physical notch, gesture area, dynamic browser chrome, or virtual keyboard; Design System `SAFE-01` remains `NOT_YET_TESTABLE`. Replication architecture is exercised through separable config/provider boundaries, but Clinic #2 is intentionally not built and the formal two-clinic Replication Gate remains open.
 
 **Checkpoint:** technically ready for Owner visual review. Do not start Clinic #2 or production content expansion before that review.
+
+## Owner visual gate history — recovery iteration 01
+
+**Technical architecture:** accepted. **Visual / experience implementation:** rejected. The first slice reduced Dark Cinematic to a dark background with a gold accent and conventional website layouts. Specifically, the Hero read as a two-column page composition; media read as a rectangular content object; Discovery read as a normal section; the Hero-to-Discovery boundary reset the scene; the experience lost the spatial/editorial character evidenced by rendered ARGON; and Design System compliance was incorrectly treated as proof of art-direction compliance.
+
+The recovery scope is limited to Home Hero, Treatment Discovery, and their continuity. Clinic, locale, content, capability, publication, route, metadata, server, consultation, and reduced-motion architecture remain the accepted foundation. ARGON is used only as rendered experience evidence; its implementation and assets remain non-production. The recovered implementation uses native document flow and data-derived editorial discovery, with an illustrated fixture field rather than clinical or clinic photography. Downstream Treatment Information, Doctor, Technology, and Consultation visuals remain pending by design.
+
+The canonical review rule is recorded in `../design-system/EXPERIENCE-DIRECTION.md` §7: Design System compliance does not imply Art Direction compliance. This recovery is ready for Owner visual review only; no Owner visual acceptance is claimed.

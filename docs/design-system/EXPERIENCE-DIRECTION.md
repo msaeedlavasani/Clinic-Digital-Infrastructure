@@ -83,3 +83,9 @@ Photography remains governed by `PHOTOGRAPHY.md` (categories, qualities, Before/
 - `COLOR-THEMING.md` theme families: **superseded as a closed set** by the Visual Worlds model (`VISUAL-WORLDS.md`); the semantic-token mapping contract itself is unchanged.
 - `CONTROLLED-VARIATION.md` axes: unchanged; Visual World selection joins the Theme axis as its governing model.
 - `MOTION-ICONOGRAPHY.md`: motion philosophy amended per §4 here; that document's reduced-motion and directional rules remain binding.
+
+## 7. Art-direction acceptance
+
+> **Design System compliance does not imply Art Direction compliance.**
+
+Visual review evaluates both independently. A screen must use canonical tokens, components, geometry, and accessibility contracts, and must also express the approved experience direction. Art-direction review considers world continuity, media integration, spatial composition, typographic authority, motion and transition character, and clinic/treatment expression. Correct component usage alone cannot establish visual acceptance; rendered evidence and Owner judgment remain required for subjective acceptance.

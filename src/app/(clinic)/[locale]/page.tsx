@@ -1,11 +1,10 @@
 import { notFound } from "next/navigation";
-import { ActionZone, ContentRail, ContentSection, GlobalRail, MediaRail, SafeArea, Viewport } from "@/design-system/primitives/layout";
+import { ActionZone, ContentRail, ContentSection, GlobalRail, SafeArea, Viewport } from "@/design-system/primitives/layout";
 import { ActionLink } from "@/design-system/components/actions";
-import { MediaComposition } from "@/design-system/components/media";
 import { contentProvider } from "@/cdi/content/provider";
 import { clinicMetadata } from "@/cdi/runtime/metadata";
 import { resolvePublicPageContext } from "@/cdi/runtime/page-context";
-import { FixtureNotice, PageFrame, ProductionHeader } from "@/cdi/runtime/presentation";
+import { PageFrame, ProductionHeader } from "@/cdi/runtime/presentation";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -28,70 +27,89 @@ export default async function ClinicHomePage({ params }: Props) {
   if (!home) notFound();
   const concerns = contentProvider.listPublicConcernPaths(context.clinic, locale);
   const text = locale === "fa" ? {
-    home: "خانه", treatments: "خدمات", consultation: "درخواست مشاوره", heroEyebrow: "مراقبت، با آگاهی",
-    discover: "دیدن گزینه‌های مرتبط", listLabel: "گزینه‌های منتشرشده",
+    consultation: "درخواست مشاوره", heroEyebrow: "زیبایی، با شناخت روشن‌تر",
+    discover: "دیدن مسیرهای مرتبط", listLabel: "مسیرهای منتشرشده",
     noTreatments: "در این زبان گزینهٔ منتشرشده‌ای وجود ندارد.", footer: "تجربهٔ مرجع CDI · دادهٔ نمایشی",
+    fixtureLabel: "نسخهٔ اعتبارسنجی CDI · تصویرسازی، نه تصویر بیمار یا درمانگاه",
+    fixtureQualifier: "Validation fixture only",
+    scrollCue: "ورود به مسیرهای درمان",
   } : {
-    home: "Home", treatments: "Treatments", consultation: "Request a consultation", heroEyebrow: "CARE, CONSIDERED",
-    discover: "Explore related options", listLabel: "Published options",
+    consultation: "Request a consultation", heroEyebrow: "MEDICAL AESTHETICS · CONSIDERED",
+    discover: "Explore treatment paths", listLabel: "PUBLISHED TREATMENT PATHS",
     noTreatments: "There are no published options in this language.", footer: "CDI reference experience · fixture data",
+    fixtureLabel: "Validation fixture only · CDI illustration, not patient or clinic photography",
+    fixtureQualifier: "",
+    scrollCue: "Enter the treatment journey",
   };
   const discoveryCopy = home.content;
 
   return (
     <PageFrame id="top">
-      <a className="skip-link" href="#main-content">{locale === "fa" ? "پرش به محتوای اصلی" : "Skip to main content"}</a>
-      <ProductionHeader clinic={context.clinic} locale={locale} />
-      <FixtureNotice clinic={context.clinic} locale={locale} />
-      <main id="main-content">
-        <section className="cdi-production-hero" aria-labelledby="hero-title" data-composition="hero">
-          <Viewport>
-            <SafeArea>
-              <GlobalRail className="cdi-production-hero__grid">
-                <ContentRail className="cdi-production-hero__copy">
-                  <p className="type-label cdi-eyebrow">{text.heroEyebrow}</p>
-                  <h1 className="type-hero" id="hero-title">{discoveryCopy.title}</h1>
-                  <p className="type-body-large cdi-production-hero__lede">{discoveryCopy.lede}</p>
-                  <ActionZone>
-                    <ActionLink href="#treatment-discovery">{text.discover}</ActionLink>
-                    <ActionLink variant="secondary" href={`/${locale}/consultation`}>{text.consultation}</ActionLink>
-                  </ActionZone>
-                  <p className="type-caption cdi-fixture-caption">{context.clinic.displayName} · {locale.toUpperCase()} · {context.clinic.visualWorldId}</p>
-                </ContentRail>
-                <MediaRail className="cdi-production-hero__media">
-                  <MediaComposition kind="landscape" title={locale === "fa" ? "تصویرسازی معماری · رسانهٔ نمایشی" : "Architectural illustration · fixture media"} overlays={false} priority />
-                </MediaRail>
-              </GlobalRail>
-            </SafeArea>
-          </Viewport>
-        </section>
+      <div className="cdi-home-journey" data-locale={locale}>
+        <div className="cdi-home-ambient" aria-hidden="true">
+          <img src="/fixtures/editorial-face-field.svg" alt="" width="1800" height="1300" fetchPriority="high" />
+        </div>
+        <a className="skip-link" href="#main-content">{locale === "fa" ? "پرش به محتوای اصلی" : "Skip to main content"}</a>
+        <ProductionHeader clinic={context.clinic} locale={locale} immersive />
+        <main id="main-content" className="cdi-home-main">
+          <section className="cdi-home-hero" aria-labelledby="hero-title" data-composition="hero">
+            <Viewport className="cdi-home-hero__viewport">
+              <SafeArea className="cdi-home-hero__safe-area">
+                <GlobalRail className="cdi-home-hero__rail">
+                  <ContentRail className="cdi-home-hero__copy" dir={locale === "fa" ? "rtl" : "ltr"}>
+                    <p className="type-label cdi-home-hero__eyebrow">{text.heroEyebrow}</p>
+                    <h1 className="type-hero" id="hero-title">{discoveryCopy.title}</h1>
+                    <p className="type-body-large cdi-home-hero__lede">{discoveryCopy.lede}</p>
+                    <ActionZone className="cdi-home-actions">
+                      <ActionLink href="#treatment-discovery" variant="text" className="cdi-home-action cdi-home-action--primary">
+                        <span>{text.discover}</span><span className="cdi-home-action__arrow" aria-hidden="true">↗</span>
+                      </ActionLink>
+                      <ActionLink href={`/${locale}/consultation`} variant="text" className="cdi-home-action">
+                        <span>{text.consultation}</span>
+                      </ActionLink>
+                    </ActionZone>
+                    <p className="type-caption cdi-home-hero__fixture">{text.fixtureLabel}{text.fixtureQualifier && <> · <span lang="en" dir="ltr">{text.fixtureQualifier}</span></>}</p>
+                  </ContentRail>
+                </GlobalRail>
+                <a className="cdi-home-scroll-cue" href="#treatment-discovery">
+                  <span aria-hidden="true" className="cdi-home-scroll-cue__line" />
+                  <span>{text.scrollCue}</span>
+                </a>
+              </SafeArea>
+            </Viewport>
+          </section>
 
-        <ContentSection id="treatment-discovery" className="cdi-production-section cdi-production-section--surface" aria-labelledby="discovery-title">
-          <div className="cdi-section-intro">
-            <p className="type-label cdi-eyebrow">{text.listLabel}</p>
-            <h2 className="type-h1" id="discovery-title">{discoveryCopy.discoveryTitle}</h2>
-            <p className="type-body-large">{discoveryCopy.discoveryPrompt}</p>
-          </div>
-          <div className="cdi-discovery-feature">
-            <p className="type-label">{locale === "fa" ? "دغدغه" : "CONCERN"}</p>
-            {concerns.length ? concerns.map((concern) => <article className="cdi-concern-path" key={concern.concernId}>
-              <h3 className="type-h2">{concern.representation.content.label}</h3>
-              <p className="type-body cdi-concern-description">{concern.representation.content.description}</p>
-              <ul className="cdi-treatment-list">
-              {concern.treatments.map(({ treatmentId, capabilityId, representation }) => (
-                <li key={treatmentId} data-capability={capabilityId}>
-                  <a className="cdi-treatment-link" href={`/${locale}/treatments/${encodeURIComponent(representation.slug)}`}>
-                    <span><strong className="type-title">{representation.content.title}</strong><span className="type-body cdi-treatment-link__summary">{representation.content.summary}</span></span>
-                    <span className="cdi-treatment-link__arrow" aria-hidden="true">↗</span>
-                  </a>
-                </li>
-              ))}
-              </ul>
-            </article>) : <p className="type-body">{text.noTreatments}</p>}
-          </div>
-        </ContentSection>
-      </main>
-      <footer className="cdi-production-footer"><span>{text.footer}</span><a href={`/${locale}/consultation`}>{text.consultation}</a></footer>
+          <section id="treatment-discovery" className="cdi-home-discovery" aria-labelledby="discovery-title" data-composition="treatment-discovery">
+            <ContentSection className="cdi-home-discovery__content">
+              <div className="cdi-home-discovery__intro" dir={locale === "fa" ? "rtl" : "ltr"}>
+                <p className="type-label cdi-home-discovery__eyebrow">{text.listLabel}</p>
+                <h2 className="type-h1" id="discovery-title">{discoveryCopy.discoveryTitle}</h2>
+                <p className="type-body-large">{discoveryCopy.discoveryPrompt}</p>
+              </div>
+              <div className="cdi-home-discovery__paths">
+                {concerns.length ? concerns.map((concern) => <article className="cdi-home-concern" key={concern.concernId} dir={locale === "fa" ? "rtl" : "ltr"}>
+                  <p className="type-label cdi-home-concern__label">{concern.representation.content.label}</p>
+                  <p className="type-body cdi-home-concern__description">{concern.representation.content.description}</p>
+                  <ul className="cdi-editorial-treatment-list">
+                    {concern.treatments.map(({ treatmentId, capabilityId, representation }) => (
+                      <li key={treatmentId} data-capability={capabilityId}>
+                        <a className="cdi-editorial-treatment" href={`/${locale}/treatments/${encodeURIComponent(representation.slug)}`}>
+                          <span className="cdi-editorial-treatment__body">
+                            <strong className="type-title">{representation.content.title}</strong>
+                            <span className="type-body cdi-editorial-treatment__summary">{representation.content.summary}</span>
+                          </span>
+                          <span className="cdi-editorial-treatment__action"><span>{text.discover}</span><span aria-hidden="true">↗</span></span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </article>) : <p className="type-body">{text.noTreatments}</p>}
+              </div>
+            </ContentSection>
+          </section>
+        </main>
+        <footer className="cdi-home-footer"><span>{text.footer}</span><a href={`/${locale}/consultation`}>{text.consultation}</a></footer>
+      </div>
     </PageFrame>
   );
 }
